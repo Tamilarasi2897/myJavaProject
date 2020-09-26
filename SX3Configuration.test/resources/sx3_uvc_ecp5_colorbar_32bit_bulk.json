@@ -1,0 +1,895 @@
+{
+  "TOOL": "EZ_USB_SX3_CONFIGURATION_UTILITY",
+  "TOOL_VERSION": "1.0_14082020",
+  "CONFIG_TABLE_GENERAL": {
+    "SIGNATURE": "CY",
+    "CONFIG_TABLE_CHECKSUM": "0x1F361",
+    "CONFIG_TABLE_LENGTH": "0x000007E8",
+    "VERSION_MAJOR": 1,
+    "VERSION_MINOR": 0,
+    "VERSION_PATCH": 0,
+    "CONFIGURATION_TYPE": 7,
+    "RESERVED": "FF"
+  },
+  "CONFIG_TABLE_OFFSET_TABLE": {
+    "SX3_DEVICE_SETTINGS_TABLE_OFFSET": "0x0070",
+    "FIFO_MASTER_CONFIG_OFFSET": "0x013e",
+    "VIDEO_SOURCE_1_CONFIG_OFFSET": "0x0162",
+    "VIDEO_SOURCE_2_CONFIG_OFFSET": "0x0162",
+    "SLAVE_FIFO_1_SETTINGS_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "SLAVE_FIFO_2_SETTINGS_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UAC_1_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UAC_2_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_CONFIG_TABLE_OFFSET": "0x018c",
+    "UVC_2_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_COLOR_MATCHING_DESCRIPTOR_OFFSET": "0x02c0",
+    "UVC_2_COLOR_MATCHING_DESCRIPTOR_OFFSET": "0xFFFF",
+    "UVC_1_CAMERA_CONTROLS_TABLE_OFFSET": "0x02cc",
+    "UVC_2_CAMERA_CONTROLS_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_PROCESSING_UNIT_TABLE_OFFSET": "0x0610",
+    "UVC_2_PROCESSING_UNIT_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_EXTENSION_UNIT_TABLE_OFFSET": "0x07d4",
+    "UVC_2_EXTENSION_UNIT_TABLE_OFFSET": "0xFFFF",
+    "RESERVED": "FF"
+  },
+  "DEVICE_NAME": "SX3 UVC (CYUSB3017)",
+  "DEVICE_SETTINGS": {
+    "USB_SETTINGS": {
+      "VENDOR_ID": "0x04b4",
+      "PRODUCT_ID": "0x40",
+      "LEN_MANUFACTURER_STRING": 7,
+      "MANUFACTURER_STRING": "Cypress",
+      "LEN_PRODUCT_STRING": 3,
+      "PRODUCT_STRING": "SX3",
+      "LEN_SERIALNUMBER": 0,
+      "SERIALNUMBER_STRING": "",
+      "AUTO_INCREMENT_SERIAL_NUMBER": 0,
+      "REMOTE_WAKEUP_ENABLE": "Disable",
+      "POWER_CONFIGURATION": "Bus Powered",
+      "CONFIG_DSCR_LENGTH_SS": 504,
+      "CONFIG_DSCR_LENGTH_HS": 504,
+      "CONFIG_DSCR_LENGTH_FS": 160,
+      "ENDPOINT1_TYPE": "UVC",
+      "ENDPOINT2_TYPE": "",
+      "FIFO_BUS_WIDTH": 32,
+      "FIFO_CLOCK": 100,
+      "FIFO_INTERFACE_TYPE": "Slave FIFO Interface",
+      "UVC_VERSION": "1.5",
+      "UVC_HEADER_ADDITION": "UVC HEADER BY FIFO MASTER",
+      "RESERVED": "FF"
+    },
+    "DEBUG_LEVEL": {
+      "DEBUG_ENABLE": "Disable",
+      "DEBUG_LEVEL": 0,
+      "AUTO_GENERATE_SERIAL_NUMBER": 1,
+      "RESERVED": "FF"
+    },
+    "GPIOS_SETTINGS": {
+      "GPIO_0_SETTING": "Not Used",
+      "GPIO_1_SETTING": "Configuration Done",
+      "GPIO_2_SETTING": "Not Used",
+      "GPIO_3_SETTING": "Not Used",
+      "GPIO_4_SETTING": "Not Used",
+      "GPIO_5_SETTING": "Not Used",
+      "GPIO_6_SETTING": "Not Used",
+      "RESERVED": "FF"
+    },
+    "AUXILLIARY_INTERFACE": {
+      "FIRMWARE_UPDATE_HID": "Disable",
+      "I2C_FREQUENCY": 100000
+    },
+    "RESERVED": "FF"
+  },
+  "FIFO_MASTER_CONFIG": {
+    "FIFO_MASTER_CONFIGURATION_DOWNLOAD_EN": "Enable",
+    "BIT_FILE_PATH": "C:\\Users\\annr\\OneDrive - Cypress Semiconductor\\Projects\\SX3\\Configs\\sx3_uvc_ecp5_colorbar_16bit_isoc\\ecp5_colorbar_aug_3_std_sf.bit",
+    "FPGA_FAMILY": "Lattice ECP5",
+    "I2C_SLAVE_ADDRESS": "0x1a",
+    "BIT_FILE_SIZE": 1032638,
+    "RESERVED": "FF"
+  },
+  "VIDEO_SOURCE_CONFIG": [
+    {
+      "ENDPOINT": 1,
+      "VIDEO_SOURCE_TYPE": "",
+      "VIDEO_SOURCE_SUBTYPE": "",
+      "ENABLE_VIDEO_SOURCE_CONFIGURATION_DOWNLOAD": "Disable",
+      "VIDEO_SOURCE_CONFIGURATION_LEN": 0,
+      "I2C_SLAVE_ADDRESS": "0xa0",
+      "I2C_SLAVE_DATA_SIZE": 1,
+      "I2C_SLAVE_REGISTER_SIZE": 0,
+      "HDMI_CONFIG_NUM_ROWS": 0,
+      "RESERVED": "FF"
+    }
+  ],
+  "UVC_SETTINGS": [
+    {
+      "ENDPOINT_SETTINGS": {
+        "ENDPOINT_TRANSFER_TYPE": "Bulk",
+        "BURST_LENGTH": 16,
+        "BUFFER_COUNT": 2,
+        "BUFFER_SIZE": 49104,
+        "USED_BUFFER_SPACE": 196416,
+        "RESERVED": "FF"
+      },
+      "FORMAT_RESOLUTION": {
+        "TOTAL_NUMBER_OF_RESOLUTIONS": 6,
+        "TOTAL_NUMBER_OF_IMAGE_FORMATS_SS_ENABLED": 4,
+        "TOTAL_NUMBER_OF_IMAGE_FORMATS_HS_ENABLED": 4,
+        "TOTAL_NUMBER_OF_IMAGE_FORMATS_FS_ENABLED": 0,
+        "TOTAL_NUMBER_OF_RESOLUTIONS_SS_ENABLED": 6,
+        "TOTAL_NUMBER_OF_RESOLUTIONS_HS_ENABLED": 6,
+        "TOTAL_NUMBER_OF_RESOLUTIONS_FS_ENABLED": 0,
+        "TOTAL_NUMBER_OF_IMAGE_FORMATS_WITH_STILL_CAPTURE_ENABLED_SS": 4,
+        "TOTAL_NUMBER_OF_IMAGE_FORMATS_WITH_STILL_CAPTURE_ENABLED_HS": 4,
+        "TOTAL_NUMBER_OF_IMAGE_FORMATS_WITH_STILL_CAPTURE_ENABLED_FS": 0,
+        "TOTAL_NUMBER_OF_RESOLUTIONS_WITH_STILL_CAPTURE_ENABLED_SS": 6,
+        "TOTAL_NUMBER_OF_RESOLUTIONS_WITH_STILL_CAPTURE_ENABLED_HS": 6,
+        "TOTAL_NUMBER_OF_RESOLUTIONS_WITH_STILL_CAPTURE_ENABLED_FS": 0,
+        "FORMAT_RESOLUTIONS": [
+          {
+            "S_NO": 1,
+            "IMAGE_FORMAT": "YUY2",
+            "BITS_PER_PIXEL": 16,
+            "H_RESOLUTION": 1920,
+            "V_RESOLUTION": 540,
+            "STILL_CAPTURE": "Enable",
+            "SUPPORTED_IN_FS": "Disable",
+            "SUPPORTED_IN_HS": "Enable",
+            "SUPPORTED_IN_SS": "Enable",
+            "FRAME_RATE_IN_FS": 0,
+            "FRAME_RATE_IN_HS": 30,
+            "FRAME_RATE_IN_SS": 60,
+            "RESOLUTION_REGISTER_SETTING_LEN": 5,
+            "RESOLUTION_REGISTER_SETTING": [
+              {
+                "REGISTER_ADDRESS": "0x0003",
+                "REGISTER_VALUE": "0x0004",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0004",
+                "REGISTER_VALUE": "0x0038",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0005",
+                "REGISTER_VALUE": "0x0007",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0006",
+                "REGISTER_VALUE": "0x0080",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0007",
+                "REGISTER_VALUE": "0x0000",
+                "SLAVE_ADDRESS": "0x001a"
+              }
+            ],
+            "RESERVED": "FF"
+          },
+          {
+            "S_NO": 2,
+            "IMAGE_FORMAT": "YUYV",
+            "BITS_PER_PIXEL": 16,
+            "H_RESOLUTION": 1920,
+            "V_RESOLUTION": 1080,
+            "STILL_CAPTURE": "Enable",
+            "SUPPORTED_IN_FS": "Disable",
+            "SUPPORTED_IN_HS": "Enable",
+            "SUPPORTED_IN_SS": "Enable",
+            "FRAME_RATE_IN_FS": 0,
+            "FRAME_RATE_IN_HS": 60,
+            "FRAME_RATE_IN_SS": 60,
+            "RESOLUTION_REGISTER_SETTING_LEN": 5,
+            "RESOLUTION_REGISTER_SETTING": [
+              {
+                "REGISTER_ADDRESS": "0x0003",
+                "REGISTER_VALUE": "0x0004",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0004",
+                "REGISTER_VALUE": "0x0038",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0005",
+                "REGISTER_VALUE": "0x0007",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0006",
+                "REGISTER_VALUE": "0x0080",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0007",
+                "REGISTER_VALUE": "0x0000",
+                "SLAVE_ADDRESS": "0x001a"
+              }
+            ],
+            "RESERVED": "FF"
+          },
+          {
+            "S_NO": 3,
+            "IMAGE_FORMAT": "YUYV",
+            "BITS_PER_PIXEL": 16,
+            "H_RESOLUTION": 1080,
+            "V_RESOLUTION": 720,
+            "STILL_CAPTURE": "Enable",
+            "SUPPORTED_IN_FS": "Disable",
+            "SUPPORTED_IN_HS": "Enable",
+            "SUPPORTED_IN_SS": "Enable",
+            "FRAME_RATE_IN_FS": 0,
+            "FRAME_RATE_IN_HS": 60,
+            "FRAME_RATE_IN_SS": 60,
+            "RESOLUTION_REGISTER_SETTING_LEN": 5,
+            "RESOLUTION_REGISTER_SETTING": [
+              {
+                "REGISTER_ADDRESS": "0x0003",
+                "REGISTER_VALUE": "0x0004",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0004",
+                "REGISTER_VALUE": "0x0038",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0005",
+                "REGISTER_VALUE": "0x0007",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0006",
+                "REGISTER_VALUE": "0x0080",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0007",
+                "REGISTER_VALUE": "0x0000",
+                "SLAVE_ADDRESS": "0x001a"
+              }
+            ],
+            "RESERVED": "FF"
+          },
+          {
+            "S_NO": 4,
+            "IMAGE_FORMAT": "YUYV",
+            "BITS_PER_PIXEL": 16,
+            "H_RESOLUTION": 640,
+            "V_RESOLUTION": 480,
+            "STILL_CAPTURE": "Enable",
+            "SUPPORTED_IN_FS": "Disable",
+            "SUPPORTED_IN_HS": "Enable",
+            "SUPPORTED_IN_SS": "Enable",
+            "FRAME_RATE_IN_FS": 0,
+            "FRAME_RATE_IN_HS": 20,
+            "FRAME_RATE_IN_SS": 60,
+            "RESOLUTION_REGISTER_SETTING_LEN": 5,
+            "RESOLUTION_REGISTER_SETTING": [
+              {
+                "REGISTER_ADDRESS": "0x0003",
+                "REGISTER_VALUE": "0x0004",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0004",
+                "REGISTER_VALUE": "0x0038",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0005",
+                "REGISTER_VALUE": "0x0007",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0006",
+                "REGISTER_VALUE": "0x0080",
+                "SLAVE_ADDRESS": "0x001a"
+              },
+              {
+                "REGISTER_ADDRESS": "0x0007",
+                "REGISTER_VALUE": "0x0000",
+                "SLAVE_ADDRESS": "0x001a"
+              }
+            ],
+            "RESERVED": "FF"
+          },
+          {
+            "S_NO": 6,
+            "IMAGE_FORMAT": "MJPG",
+            "BITS_PER_PIXEL": 16,
+            "H_RESOLUTION": 640,
+            "V_RESOLUTION": 360,
+            "STILL_CAPTURE": "Enable",
+            "SUPPORTED_IN_FS": "Disable",
+            "SUPPORTED_IN_HS": "Enable",
+            "SUPPORTED_IN_SS": "Enable",
+            "FRAME_RATE_IN_FS": 0,
+            "FRAME_RATE_IN_HS": 30,
+            "FRAME_RATE_IN_SS": 60,
+            "RESOLUTION_REGISTER_SETTING_LEN": 1,
+            "RESOLUTION_REGISTER_SETTING": [
+              {
+                "REGISTER_ADDRESS": "0x0001",
+                "REGISTER_VALUE": "0x0001",
+                "SLAVE_ADDRESS": "0xDDDD"
+              }
+            ],
+            "RESERVED": "FF"
+          },
+          {
+            "S_NO": 5,
+            "IMAGE_FORMAT": "I420",
+            "BITS_PER_PIXEL": 12,
+            "H_RESOLUTION": 1080,
+            "V_RESOLUTION": 720,
+            "STILL_CAPTURE": "Enable",
+            "SUPPORTED_IN_FS": "Disable",
+            "SUPPORTED_IN_HS": "Enable",
+            "SUPPORTED_IN_SS": "Enable",
+            "FRAME_RATE_IN_FS": 0,
+            "FRAME_RATE_IN_HS": 30,
+            "FRAME_RATE_IN_SS": 60,
+            "RESOLUTION_REGISTER_SETTING_LEN": 1,
+            "RESOLUTION_REGISTER_SETTING": [
+              {
+                "REGISTER_ADDRESS": "0x0001",
+                "REGISTER_VALUE": "0x0001",
+                "SLAVE_ADDRESS": "0xDDDD"
+              }
+            ],
+            "RESERVED": "FF"
+          }
+        ]
+      },
+      "COLOR_MATCHING": {
+        "COLOR_PRIMARIES": "Unspecified (Image characteristics unknown)",
+        "TRANSFER_CHARACTERISTICS": "Unspecified (Image characteristics unknown)",
+        "MATRIX_COEFFICIENTS": "Unspecified (Image characteristics unknown)",
+        "RESERVED": "FF"
+      },
+      "CAMERA_CONTROL": {
+        "CAMERA_CONTROLS_ENABLED_BITMASK": "0b00000000000000000000000000000000",
+        "CAMERA_CONTROLS": [
+          {
+            "AUTO-EXPOSURE_MODE": {
+              "AUTO-EXPOSURE_MODE_ENABLE": "Disable",
+              "AUTO-EXPOSURE_MODE_MIN": 0,
+              "AUTO-EXPOSURE_MODE_MAX": 0,
+              "AUTO-EXPOSURE_MODE_STEP": 0,
+              "AUTO-EXPOSURE_MODE_DEFAULT": 0,
+              "AUTO-EXPOSURE_MODE_CURRENT_VALUE": 0,
+              "AUTO-EXPOSURE_MODE_REGISTER_ADDRESS": "",
+              "AUTO-EXPOSURE_MODE_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "AUTO-EXPOSURE_PRIORITY": {
+              "AUTO-EXPOSURE_PRIORITY_ENABLE": "Disable",
+              "AUTO-EXPOSURE_PRIORITY_MIN": 0,
+              "AUTO-EXPOSURE_PRIORITY_MAX": 0,
+              "AUTO-EXPOSURE_PRIORITY_STEP": 0,
+              "AUTO-EXPOSURE_PRIORITY_DEFAULT": 0,
+              "AUTO-EXPOSURE_PRIORITY_CURRENT_VALUE": 0,
+              "AUTO-EXPOSURE_PRIORITY_REGISTER_ADDRESS": "",
+              "AUTO-EXPOSURE_PRIORITY_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "EXPOSURE_TIME": {
+              "EXPOSURE_TIME_ENABLE": "Disable",
+              "EXPOSURE_TIME_MIN": 0,
+              "EXPOSURE_TIME_MAX": 0,
+              "EXPOSURE_TIME_STEP": 0,
+              "EXPOSURE_TIME_DEFAULT": 0,
+              "EXPOSURE_TIME_CURRENT_VALUE": 0,
+              "EXPOSURE_TIME_REGISTER_ADDRESS": "",
+              "EXPOSURE_TIME_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "FOCUS": {
+              "FOCUS_ENABLE": "Disable",
+              "FOCUS_MIN": 0,
+              "FOCUS_MAX": 0,
+              "FOCUS_STEP": 0,
+              "FOCUS_DEFAULT": 0,
+              "FOCUS_CURRENT_VALUE": 0,
+              "FOCUS_REGISTER_ADDRESS": "",
+              "FOCUS_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "IRIS": {
+              "IRIS_ENABLE": "Disable",
+              "IRIS_MIN": 0,
+              "IRIS_MAX": 0,
+              "IRIS_STEP": 0,
+              "IRIS_DEFAULT": 0,
+              "IRIS_CURRENT_VALUE": 0,
+              "IRIS_REGISTER_ADDRESS": "",
+              "IRIS_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "ZOOM": {
+              "ZOOM_ENABLE": "Disable",
+              "ZOOM_MIN": 0,
+              "ZOOM_MAX": 0,
+              "ZOOM_STEP": 0,
+              "ZOOM_DEFAULT": 0,
+              "ZOOM_CURRENT_VALUE": 0,
+              "ZOOM_REGISTER_ADDRESS": "",
+              "ZOOM_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "PANTILT": {
+              "PANTILT_ENABLE": "Disable",
+              "PANTILT_MIN": 0,
+              "PANTILT_MAX": 0,
+              "PANTILT_STEP": 0,
+              "PANTILT_DEFAULT": 0,
+              "PANTILT_CURRENT_VALUE": 0,
+              "PANTILT_REGISTER_ADDRESS": "",
+              "PANTILT_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "ROLL": {
+              "ROLL_ENABLE": "Disable",
+              "ROLL_MIN": 0,
+              "ROLL_MAX": 0,
+              "ROLL_STEP": 0,
+              "ROLL_DEFAULT": 0,
+              "ROLL_CURRENT_VALUE": 0,
+              "ROLL_REGISTER_ADDRESS": "",
+              "ROLL_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_TOP_(IN_PIXELS)": {
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_ENABLE": "Disable",
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_MIN": 0,
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_MAX": 0,
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_STEP": 0,
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_DEFAULT": 0,
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_TOP_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_LEFT_(IN_PIXELS)": {
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_ENABLE": "Disable",
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_MIN": 0,
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_MAX": 0,
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_STEP": 0,
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_DEFAULT": 0,
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_LEFT_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)": {
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_ENABLE": "Disable",
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_MIN": 0,
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_MAX": 0,
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_STEP": 0,
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_DEFAULT": 0,
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_BOTTOM_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)": {
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_ENABLE": "Disable",
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_MIN": 0,
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_MAX": 0,
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_STEP": 0,
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_DEFAULT": 0,
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_RIGHT_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_AUTO_EXPOSURE": {
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_ENABLE": "Disable",
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_MIN": 0,
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_MAX": 0,
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_STEP": 0,
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_DEFAULT": 0,
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_AUTO_EXPOSURE_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_AUTO_IRIS": {
+              "REGION_OF_INTEREST_AUTO_IRIS_ENABLE": "Disable",
+              "REGION_OF_INTEREST_AUTO_IRIS_MIN": 0,
+              "REGION_OF_INTEREST_AUTO_IRIS_MAX": 0,
+              "REGION_OF_INTEREST_AUTO_IRIS_STEP": 0,
+              "REGION_OF_INTEREST_AUTO_IRIS_DEFAULT": 0,
+              "REGION_OF_INTEREST_AUTO_IRIS_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_AUTO_IRIS_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_AUTO_IRIS_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_AUTO_WHITE_BALANCE": {
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_ENABLE": "Disable",
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_MIN": 0,
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_MAX": 0,
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_STEP": 0,
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_DEFAULT": 0,
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_AUTO_WHITE_BALANCE_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_AUTO_FOCUS": {
+              "REGION_OF_INTEREST_AUTO_FOCUS_ENABLE": "Disable",
+              "REGION_OF_INTEREST_AUTO_FOCUS_MIN": 0,
+              "REGION_OF_INTEREST_AUTO_FOCUS_MAX": 0,
+              "REGION_OF_INTEREST_AUTO_FOCUS_STEP": 0,
+              "REGION_OF_INTEREST_AUTO_FOCUS_DEFAULT": 0,
+              "REGION_OF_INTEREST_AUTO_FOCUS_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_AUTO_FOCUS_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_AUTO_FOCUS_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_AUTO_FACE_DETECT": {
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_ENABLE": "Disable",
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_MIN": 0,
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_MAX": 0,
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_STEP": 0,
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_DEFAULT": 0,
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_AUTO_FACE_DETECT_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK": {
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_ENABLE": "Disable",
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_MIN": 0,
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_MAX": 0,
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_STEP": 0,
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_DEFAULT": 0,
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_AUTO_DETECT_AND_TRACK_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTEREST_IMAGE_STABILIZATION": {
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_ENABLE": "Disable",
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_MIN": 0,
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_MAX": 0,
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_STEP": 0,
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_DEFAULT": 0,
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_CURRENT_VALUE": 0,
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_REGISTER_ADDRESS": "",
+              "REGION_OF_INTEREST_IMAGE_STABILIZATION_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "REGION_OF_INTERESTHIGHER_QUALITY": {
+              "REGION_OF_INTERESTHIGHER_QUALITY_ENABLE": "Disable",
+              "REGION_OF_INTERESTHIGHER_QUALITY_MIN": 0,
+              "REGION_OF_INTERESTHIGHER_QUALITY_MAX": 0,
+              "REGION_OF_INTERESTHIGHER_QUALITY_STEP": 0,
+              "REGION_OF_INTERESTHIGHER_QUALITY_DEFAULT": 0,
+              "REGION_OF_INTERESTHIGHER_QUALITY_CURRENT_VALUE": 0,
+              "REGION_OF_INTERESTHIGHER_QUALITY_REGISTER_ADDRESS": "",
+              "REGION_OF_INTERESTHIGHER_QUALITY_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WINDOW_CONTROL_TOP_(IN_PIXELS)": {
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_ENABLE": "Disable",
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_MIN": 0,
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_MAX": 0,
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_STEP": 0,
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_DEFAULT": 0,
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "WINDOW_CONTROL_TOP_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WINDOW_CONTROL_LEFT_(IN_PIXELS)": {
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_ENABLE": "Disable",
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_MIN": 0,
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_MAX": 0,
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_STEP": 0,
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_DEFAULT": 0,
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "WINDOW_CONTROL_LEFT_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)": {
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_ENABLE": "Disable",
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_MIN": 0,
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_MAX": 0,
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_STEP": 0,
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_DEFAULT": 0,
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "WINDOW_CONTROL_BOTTOM_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WINDOW_CONTROL_RIGHT_(IN_PIXELS)": {
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_ENABLE": "Disable",
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_MIN": 0,
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_MAX": 0,
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_STEP": 0,
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_DEFAULT": 0,
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "WINDOW_CONTROL_RIGHT_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)": {
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_ENABLE": "Disable",
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_MIN": 0,
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_MAX": 0,
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_STEP": 0,
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_DEFAULT": 0,
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "WINDOW_CONTROL_NUMSTEPS_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)": {
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_ENABLE": "Disable",
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_MIN": 0,
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_MAX": 0,
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_STEP": 0,
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_DEFAULT": 0,
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_CURRENT_VALUE": 0,
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_REGISTER_ADDRESS": "",
+              "WINDOW_CONTROL_NUMSTEPSUNITS_(IN_PIXELS)_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          }
+        ]
+      },
+      "PROCESSING_UNIT_CONTROL": {
+        "PROCESSING_UNIT_ENABLED_CONTROLS_BITMASK": "0b00000000000000000000000000000000",
+        "PROCESSING_UNIT_CONTROLS": [
+          {
+            "BRIGHTNESS": {
+              "BRIGHTNESS_ENABLE": "Disable",
+              "BRIGHTNESS_MIN": 0,
+              "BRIGHTNESS_MAX": 0,
+              "BRIGHTNESS_STEP": 0,
+              "BRIGHTNESS_DEFAULT": 0,
+              "BRIGHTNESS_CURRENT_VALUE": 0,
+              "BRIGHTNESS_REGISTER_ADDRESS": "",
+              "BRIGHTNESS_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "CONTRAST": {
+              "CONTRAST_ENABLE": "Disable",
+              "CONTRAST_MIN": 0,
+              "CONTRAST_MAX": 0,
+              "CONTRAST_STEP": 0,
+              "CONTRAST_DEFAULT": 0,
+              "CONTRAST_CURRENT_VALUE": 0,
+              "CONTRAST_REGISTER_ADDRESS": "",
+              "CONTRAST_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "SATURATION": {
+              "SATURATION_ENABLE": "Disable",
+              "SATURATION_MIN": 0,
+              "SATURATION_MAX": 0,
+              "SATURATION_STEP": 0,
+              "SATURATION_DEFAULT": 0,
+              "SATURATION_CURRENT_VALUE": 0,
+              "SATURATION_REGISTER_ADDRESS": "",
+              "SATURATION_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "HUE": {
+              "HUE_ENABLE": "Disable",
+              "HUE_MIN": 0,
+              "HUE_MAX": 0,
+              "HUE_STEP": 0,
+              "HUE_DEFAULT": 0,
+              "HUE_CURRENT_VALUE": 0,
+              "HUE_REGISTER_ADDRESS": "",
+              "HUE_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "SHARPNESS": {
+              "SHARPNESS_ENABLE": "Disable",
+              "SHARPNESS_MIN": 0,
+              "SHARPNESS_MAX": 0,
+              "SHARPNESS_STEP": 0,
+              "SHARPNESS_DEFAULT": 0,
+              "SHARPNESS_CURRENT_VALUE": 0,
+              "SHARPNESS_REGISTER_ADDRESS": "",
+              "SHARPNESS_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "GAMMA": {
+              "GAMMA_ENABLE": "Disable",
+              "GAMMA_MIN": 0,
+              "GAMMA_MAX": 0,
+              "GAMMA_STEP": 0,
+              "GAMMA_DEFAULT": 0,
+              "GAMMA_CURRENT_VALUE": 0,
+              "GAMMA_REGISTER_ADDRESS": "",
+              "GAMMA_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WHITE_BALANCE_TEMPERATURE": {
+              "WHITE_BALANCE_TEMPERATURE_ENABLE": "Disable",
+              "WHITE_BALANCE_TEMPERATURE_MIN": 0,
+              "WHITE_BALANCE_TEMPERATURE_MAX": 0,
+              "WHITE_BALANCE_TEMPERATURE_STEP": 0,
+              "WHITE_BALANCE_TEMPERATURE_DEFAULT": 0,
+              "WHITE_BALANCE_TEMPERATURE_CURRENT_VALUE": 0,
+              "WHITE_BALANCE_TEMPERATURE_REGISTER_ADDRESS": "",
+              "WHITE_BALANCE_TEMPERATURE_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WHITE_BALANCE_COMPONENT": {
+              "WHITE_BALANCE_COMPONENT_ENABLE": "Disable",
+              "WHITE_BALANCE_COMPONENT_MIN": 0,
+              "WHITE_BALANCE_COMPONENT_MAX": 0,
+              "WHITE_BALANCE_COMPONENT_STEP": 0,
+              "WHITE_BALANCE_COMPONENT_DEFAULT": 0,
+              "WHITE_BALANCE_COMPONENT_CURRENT_VALUE": 0,
+              "WHITE_BALANCE_COMPONENT_REGISTER_ADDRESS": "",
+              "WHITE_BALANCE_COMPONENT_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "BACKLIGHT_COMPENSATION": {
+              "BACKLIGHT_COMPENSATION_ENABLE": "Disable",
+              "BACKLIGHT_COMPENSATION_MIN": 0,
+              "BACKLIGHT_COMPENSATION_MAX": 0,
+              "BACKLIGHT_COMPENSATION_STEP": 0,
+              "BACKLIGHT_COMPENSATION_DEFAULT": 0,
+              "BACKLIGHT_COMPENSATION_CURRENT_VALUE": 0,
+              "BACKLIGHT_COMPENSATION_REGISTER_ADDRESS": "",
+              "BACKLIGHT_COMPENSATION_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "GAIN": {
+              "GAIN_ENABLE": "Disable",
+              "GAIN_MIN": 0,
+              "GAIN_MAX": 0,
+              "GAIN_STEP": 0,
+              "GAIN_DEFAULT": 0,
+              "GAIN_CURRENT_VALUE": 0,
+              "GAIN_REGISTER_ADDRESS": "",
+              "GAIN_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "POWER_LINE_FREQUENCY": {
+              "POWER_LINE_FREQUENCY_ENABLE": "Disable",
+              "POWER_LINE_FREQUENCY_MIN": 0,
+              "POWER_LINE_FREQUENCY_MAX": 0,
+              "POWER_LINE_FREQUENCY_STEP": 0,
+              "POWER_LINE_FREQUENCY_DEFAULT": 0,
+              "POWER_LINE_FREQUENCY_CURRENT_VALUE": 0,
+              "POWER_LINE_FREQUENCY_REGISTER_ADDRESS": "",
+              "POWER_LINE_FREQUENCY_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "HUE,_AUTO": {
+              "HUE,_AUTO_ENABLE": "Disable",
+              "HUE,_AUTO_MIN": 0,
+              "HUE,_AUTO_MAX": 0,
+              "HUE,_AUTO_STEP": 0,
+              "HUE,_AUTO_DEFAULT": 0,
+              "HUE,_AUTO_CURRENT_VALUE": 0,
+              "HUE,_AUTO_REGISTER_ADDRESS": "",
+              "HUE,_AUTO_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WHITE_BALANCE_TEMPERATURE,_AUTO": {
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_ENABLE": "Disable",
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_MIN": 0,
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_MAX": 0,
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_STEP": 0,
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_DEFAULT": 0,
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_CURRENT_VALUE": 0,
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_REGISTER_ADDRESS": "",
+              "WHITE_BALANCE_TEMPERATURE,_AUTO_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          },
+          {
+            "WHITE_BALANCE_COMPONENT,_AUTO": {
+              "WHITE_BALANCE_COMPONENT,_AUTO_ENABLE": "Disable",
+              "WHITE_BALANCE_COMPONENT,_AUTO_MIN": 0,
+              "WHITE_BALANCE_COMPONENT,_AUTO_MAX": 0,
+              "WHITE_BALANCE_COMPONENT,_AUTO_STEP": 0,
+              "WHITE_BALANCE_COMPONENT,_AUTO_DEFAULT": 0,
+              "WHITE_BALANCE_COMPONENT,_AUTO_CURRENT_VALUE": 0,
+              "WHITE_BALANCE_COMPONENT,_AUTO_REGISTER_ADDRESS": "",
+              "WHITE_BALANCE_COMPONENT,_AUTO_LENGTH": 0,
+              "RESERVED": "FF"
+            }
+          }
+        ]
+      },
+      "EXTENSION_UNIT_CONTROL": {
+        "DEVICE_RESET_VENDOR_COMMAND_ENABLED": "Disable",
+        "I2C_READ_VENDOR_COMMAND_ENABLED": "Disable",
+        "I2C_WRITE_VENDOR_COMMAND_ENABLED": "Disable",
+        "FIRMWARE_VERSION_VENDOR_COMMAND_ENABLED": "Disable"
+      },
+      "RESERVED": "FF"
+    }
+  ]
+}

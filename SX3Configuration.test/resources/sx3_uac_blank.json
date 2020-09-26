@@ -1,0 +1,1991 @@
+{
+  "TOOL": "EZ_USB_SX3_CONFIGURATION_UTILITY",
+  "TOOL_VERSION": "1.0",
+  "CONFIG_TABLE_GENERAL": {
+    "SIGNATURE": "CY",
+    "CONFIG_TABLE_CHECKSUM": "0x1131D",
+    "CONFIG_TABLE_LENGTH": "0x000001CE",
+    "VERSION_MAJOR": 1,
+    "VERSION_MINOR": 0,
+    "VERSION_PATCH": 0,
+    "CONFIGURATION_TYPE": 12,
+    "RESERVED": "FF"
+  },
+  "CONFIG_TABLE_OFFSET_TABLE": {
+    "SX3_DEVICE_SETTINGS_TABLE_OFFSET": "0x0070",
+    "FIFO_MASTER_CONFIG_OFFSET": "0x013f",
+    "VIDEO_SOURCE_1_CONFIG_OFFSET": "0x0163",
+    "VIDEO_SOURCE_2_CONFIG_OFFSET": "0xFFFF",
+    "SLAVE_FIFO_1_SETTINGS_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "SLAVE_FIFO_2_SETTINGS_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UAC_1_CONFIG_TABLE_OFFSET": "0x018e",
+    "UAC_2_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UVC_2_CONFIG_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_COLOR_MATCHING_DESCRIPTOR_OFFSET": "0xFFFF",
+    "UVC_2_COLOR_MATCHING_DESCRIPTOR_OFFSET": "0xFFFF",
+    "UVC_1_CAMERA_CONTROLS_TABLE_OFFSET": "0xFFFF",
+    "UVC_2_CAMERA_CONTROLS_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_PROCESSING_UNIT_TABLE_OFFSET": "0xFFFF",
+    "UVC_2_PROCESSING_UNIT_TABLE_OFFSET": "0xFFFF",
+    "UVC_1_EXTENSION_UNIT_TABLE_OFFSET": "0xFFFF",
+    "UVC_2_EXTENSION_UNIT_TABLE_OFFSET": "0xFFFF",
+    "RESERVED": "FF"
+  },
+  "DEVICE_NAME": "SX3 UVC (CYUSB3017)",
+  "DEVICE_SETTINGS": {
+    "USB_SETTINGS": {
+      "VENDOR_ID": "0x04b4",
+      "PRODUCT_ID": "0x0040",
+      "LEN_MANUFACTURER_STRING": 7,
+      "MANUFACTURER_STRING": "Cypress",
+      "LEN_PRODUCT_STRING": 3,
+      "PRODUCT_STRING": "SX3",
+      "LEN_SERIALNUMBER": 0,
+      "SERIALNUMBER_STRING": "",
+      "AUTO_INCREMENT_SERIAL_NUMBER": 0,
+      "REMOTE_WAKEUP_ENABLE": "Disable",
+      "POWER_CONFIGURATION": "Bus Powered",
+      "CONFIG_DSCR_LENGTH_SS": 123,
+      "CONFIG_DSCR_LENGTH_HS": 117,
+      "CONFIG_DSCR_LENGTH_FS": 117,
+      "NUM_ENDPOINTS": 0,
+      "ENDPOINT1_TYPE": "UAC",
+      "ENDPOINT2_TYPE": "",
+      "FIFO_BUS_WIDTH": 32,
+      "FIFO_CLOCK": 100,
+      "FIFO_INTERFACE_TYPE": "Slave FIFO Interface",
+      "RESERVED": "FF"
+    },
+    "DEBUG_LEVEL": {
+      "DEBUG_ENABLE": "Disable",
+      "DEBUG_LEVEL": 0,
+      "AUTO_GENERATE_SERIAL_NUMBER": 1,
+      "RESERVED": "FF"
+    },
+    "GPIOS_SETTINGS": {
+      "GPIO_0_SETTING": "Not Used",
+      "GPIO_1_SETTING": "Configuration Done",
+      "GPIO_2_SETTING": "Not Used",
+      "GPIO_3_SETTING": "Not Used",
+      "GPIO_4_SETTING": "Not Used",
+      "GPIO_5_SETTING": "Not Used",
+      "GPIO_6_SETTING": "Not Used",
+      "RESERVED": "FF"
+    },
+    "AUXILLIARY_INTERFACE": {
+      "FIRMWARE_UPDATE_HID": "Disable",
+      "I2C_FREQUENCY": 100000
+    },
+    "RESERVED": "FF"
+  },
+  "FIFO_MASTER_CONFIG": {
+    "FIFO_MASTER_CONFIGURATION_DOWNLOAD_EN": "Enable",
+    "BIT_FILE_PATH": "C:\\Users\\annr\\OneDrive - Cypress Semiconductor\\Projects\\SX3\\FPGA_BitFIles\\static_frame_1080p_colorbar_ecp5_aug3\\static_frame_cy_impl1.bit",
+    "FPGA_FAMILY": "Lattice ECP5",
+    "I2C_SLAVE_ADDRESS": "0x1A",
+    "I2C_FREQUENCY": 100000,
+    "BIT_FILE_SIZE": 1032638,
+    "RESERVED": "FF"
+  },
+  "VIDEO_SOURCE_CONFIG": [
+    {
+      "ENDPOINT": 1,
+      "VIDEO_SOURCE_TYPE": "HDMI Source",
+      "VIDEO_SOURCE_SUBTYPE": "HDMI RX - ITE6801",
+      "ENABLE_VIDEO_SOURCE_CONFIGURATION_DOWNLOAD": "Enable",
+      "VIDEO_SOURCE_CONFIGURATION_LEN": 364,
+      "VIDEO_SOURCE_CONFIGURATION": [
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0010",
+          "REGISTER_VALUE": "0x0008",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0034",
+          "REGISTER_VALUE": "0x00E1",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0010",
+          "REGISTER_VALUE": "0x0017",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0011",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0018",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0012",
+          "REGISTER_VALUE": "0x00F8",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0010",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0011",
+          "REGISTER_VALUE": "0x00A0",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0018",
+          "REGISTER_VALUE": "0x00A0",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0012",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B0",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0017",
+          "REGISTER_VALUE": "0x0080",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001E",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0016",
+          "REGISTER_VALUE": "0x0088",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001D",
+          "REGISTER_VALUE": "0x0008",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002B",
+          "REGISTER_VALUE": "0x0007",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0031",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0049",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0035",
+          "REGISTER_VALUE": "0x0055",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004B",
+          "REGISTER_VALUE": "0x0055",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0054",
+          "REGISTER_VALUE": "0x0011",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006A",
+          "REGISTER_VALUE": "0x0081",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0074",
+          "REGISTER_VALUE": "0x00A0",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0050",
+          "REGISTER_VALUE": "0x00B2",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0065",
+          "REGISTER_VALUE": "0x0008",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007A",
+          "REGISTER_VALUE": "0x00D0",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0085",
+          "REGISTER_VALUE": "0x000E",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C0",
+          "REGISTER_VALUE": "0x0044",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0087",
+          "REGISTER_VALUE": "0x00A9",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0071",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0037",
+          "REGISTER_VALUE": "0x00A6",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004D",
+          "REGISTER_VALUE": "0x00A6",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0067",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007A",
+          "REGISTER_VALUE": "0x00D0",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0077",
+          "REGISTER_VALUE": "0x0080",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C0",
+          "REGISTER_VALUE": "0x0088",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007E",
+          "REGISTER_VALUE": "0x0040",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0052",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0053",
+          "REGISTER_VALUE": "0x004F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0058",
+          "REGISTER_VALUE": "0x0033",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0059",
+          "REGISTER_VALUE": "0x00AA",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0025",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003D",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0027",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0028",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0029",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003F",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0040",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0041",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BC",
+          "REGISTER_VALUE": "0x0006",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CC",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C6",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B5",
+          "REGISTER_VALUE": "0x001F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B8",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B6",
+          "REGISTER_VALUE": "0x0013",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0010",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0011",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0012",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0013",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0028",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0029",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002A",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002B",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002C",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0022",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003A",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0026",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003E",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0063",
+          "REGISTER_VALUE": "0x003F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0073",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0060",
+          "REGISTER_VALUE": "0x00BF",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002A",
+          "REGISTER_VALUE": "0x0032",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0042",
+          "REGISTER_VALUE": "0x0012",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0077",
+          "REGISTER_VALUE": "0x0088",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0053",
+          "REGISTER_VALUE": "0x004F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0011",
+          "REGISTER_VALUE": "0x00A1",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0011",
+          "REGISTER_VALUE": "0x00A0",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0022",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0026",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B0",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0010",
+          "REGISTER_VALUE": "0x0012",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0052",
+          "REGISTER_VALUE": "0x003F",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B0",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0000",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0001",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0002",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0003",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0004",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0005",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0006",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0007",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0008",
+          "REGISTER_VALUE": "0x0026",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0009",
+          "REGISTER_VALUE": "0x0085",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000A",
+          "REGISTER_VALUE": "0x0002",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000B",
+          "REGISTER_VALUE": "0x0068",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000C",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000D",
+          "REGISTER_VALUE": "0x0068",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000E",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x000F",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0010",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0011",
+          "REGISTER_VALUE": "0x0017",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0012",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0013",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0014",
+          "REGISTER_VALUE": "0x0080",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0015",
+          "REGISTER_VALUE": "0x0073",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0016",
+          "REGISTER_VALUE": "0x0041",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0017",
+          "REGISTER_VALUE": "0x0078",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0018",
+          "REGISTER_VALUE": "0x002A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0019",
+          "REGISTER_VALUE": "0x007C",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001A",
+          "REGISTER_VALUE": "0x0011",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001B",
+          "REGISTER_VALUE": "0x009E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001C",
+          "REGISTER_VALUE": "0x0059",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001D",
+          "REGISTER_VALUE": "0x0047",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001E",
+          "REGISTER_VALUE": "0x009B",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x001F",
+          "REGISTER_VALUE": "0x0027",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0020",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0021",
+          "REGISTER_VALUE": "0x0050",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0022",
+          "REGISTER_VALUE": "0x0054",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0023",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0024",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0025",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0026",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0027",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0028",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0029",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002A",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002B",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002C",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002D",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002E",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x002F",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0030",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0031",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0032",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0033",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0034",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0035",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0036",
+          "REGISTER_VALUE": "0x0002",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0037",
+          "REGISTER_VALUE": "0x003A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0038",
+          "REGISTER_VALUE": "0x0080",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0039",
+          "REGISTER_VALUE": "0x0018",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003A",
+          "REGISTER_VALUE": "0x0071",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003B",
+          "REGISTER_VALUE": "0x0038",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003C",
+          "REGISTER_VALUE": "0x002D",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003D",
+          "REGISTER_VALUE": "0x0040",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003E",
+          "REGISTER_VALUE": "0x0058",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x003F",
+          "REGISTER_VALUE": "0x002C",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0040",
+          "REGISTER_VALUE": "0x0045",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0041",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0042",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0043",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0044",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0045",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0046",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0047",
+          "REGISTER_VALUE": "0x001E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0048",
+          "REGISTER_VALUE": "0x008C",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0049",
+          "REGISTER_VALUE": "0x000A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004A",
+          "REGISTER_VALUE": "0x00D0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004B",
+          "REGISTER_VALUE": "0x008A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004C",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004D",
+          "REGISTER_VALUE": "0x00E0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004E",
+          "REGISTER_VALUE": "0x002D",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x004F",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0050",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0051",
+          "REGISTER_VALUE": "0x003E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0052",
+          "REGISTER_VALUE": "0x0096",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0053",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0054",
+          "REGISTER_VALUE": "0x0004",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0055",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0056",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0057",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0058",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0059",
+          "REGISTER_VALUE": "0x0018",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x005A",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x005B",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x005C",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x005D",
+          "REGISTER_VALUE": "0x00FC",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x005E",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x005F",
+          "REGISTER_VALUE": "0x0049",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0060",
+          "REGISTER_VALUE": "0x0054",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0061",
+          "REGISTER_VALUE": "0x0045",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0062",
+          "REGISTER_VALUE": "0x0036",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0063",
+          "REGISTER_VALUE": "0x0038",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0064",
+          "REGISTER_VALUE": "0x0030",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0065",
+          "REGISTER_VALUE": "0x0032",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0066",
+          "REGISTER_VALUE": "0x000A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0067",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0068",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0069",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006A",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006B",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006C",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006D",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006E",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x006F",
+          "REGISTER_VALUE": "0x00FD",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0070",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0071",
+          "REGISTER_VALUE": "0x0030",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0072",
+          "REGISTER_VALUE": "0x007A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0073",
+          "REGISTER_VALUE": "0x000F",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0074",
+          "REGISTER_VALUE": "0x0050",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0075",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0076",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0077",
+          "REGISTER_VALUE": "0x000A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0078",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0079",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007A",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007B",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007C",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007D",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x007E",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C4",
+          "REGISTER_VALUE": "0x00F3",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C8",
+          "REGISTER_VALUE": "0x00F3",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0080",
+          "REGISTER_VALUE": "0x0002",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0081",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0082",
+          "REGISTER_VALUE": "0x0019",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0083",
+          "REGISTER_VALUE": "0x0072",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0084",
+          "REGISTER_VALUE": "0x0046",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0085",
+          "REGISTER_VALUE": "0x0090",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0086",
+          "REGISTER_VALUE": "0x0004",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0087",
+          "REGISTER_VALUE": "0x0013",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0088",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0089",
+          "REGISTER_VALUE": "0x0002",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x008A",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x008B",
+          "REGISTER_VALUE": "0x0023",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x008C",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x008D",
+          "REGISTER_VALUE": "0x0007",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x008E",
+          "REGISTER_VALUE": "0x0007",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x008F",
+          "REGISTER_VALUE": "0x0083",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0090",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0091",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0092",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0093",
+          "REGISTER_VALUE": "0x0065",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0094",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0095",
+          "REGISTER_VALUE": "0x000C",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0096",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0097",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0098",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0099",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x009A",
+          "REGISTER_VALUE": "0x001D",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x009B",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x009C",
+          "REGISTER_VALUE": "0x0072",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x009D",
+          "REGISTER_VALUE": "0x0051",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x009E",
+          "REGISTER_VALUE": "0x00D0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x009F",
+          "REGISTER_VALUE": "0x001E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A0",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A1",
+          "REGISTER_VALUE": "0x006E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A2",
+          "REGISTER_VALUE": "0x0028",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A3",
+          "REGISTER_VALUE": "0x0055",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A4",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A5",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A6",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A7",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A8",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00A9",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00AA",
+          "REGISTER_VALUE": "0x001E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00AB",
+          "REGISTER_VALUE": "0x00D6",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00AC",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00AD",
+          "REGISTER_VALUE": "0x0080",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00AE",
+          "REGISTER_VALUE": "0x00A0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00AF",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B0",
+          "REGISTER_VALUE": "0x00E0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B1",
+          "REGISTER_VALUE": "0x002D",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B2",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B3",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B4",
+          "REGISTER_VALUE": "0x0060",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B5",
+          "REGISTER_VALUE": "0x00A2",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B6",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B7",
+          "REGISTER_VALUE": "0x0004",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B8",
+          "REGISTER_VALUE": "0x0003",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00B9",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BA",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BB",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BC",
+          "REGISTER_VALUE": "0x0018",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BD",
+          "REGISTER_VALUE": "0x008C",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BE",
+          "REGISTER_VALUE": "0x000A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00BF",
+          "REGISTER_VALUE": "0x00D0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C0",
+          "REGISTER_VALUE": "0x008A",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C1",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C2",
+          "REGISTER_VALUE": "0x00E0",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C3",
+          "REGISTER_VALUE": "0x002D",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C4",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C5",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C6",
+          "REGISTER_VALUE": "0x003E",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C7",
+          "REGISTER_VALUE": "0x0096",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C8",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C9",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CA",
+          "REGISTER_VALUE": "0x0009",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CB",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CC",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CD",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CE",
+          "REGISTER_VALUE": "0x0018",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00CF",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D0",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D1",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D2",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D3",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D4",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D5",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D6",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D7",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D8",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00D9",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00DA",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00DB",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00DC",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00DD",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00DE",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00DF",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E0",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E1",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E2",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E3",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E4",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E5",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E6",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E7",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E8",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00E9",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00EA",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00EB",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00EC",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00ED",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00EE",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00EF",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F0",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F1",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F2",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F3",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F4",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F5",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F6",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F7",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F8",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00F9",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FA",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FB",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FC",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FD",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FE",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x00A8"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C1",
+          "REGISTER_VALUE": "0x0097",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C2",
+          "REGISTER_VALUE": "0x0010",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C3",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C5",
+          "REGISTER_VALUE": "0x007B",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C6",
+          "REGISTER_VALUE": "0x0020",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C7",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C9",
+          "REGISTER_VALUE": "0x006B",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C0",
+          "REGISTER_VALUE": "0x0064",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FE",
+          "REGISTER_VALUE": "0x0001",
+          "SLAVE_ADDRESS": "0xDDDD"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00C0",
+          "REGISTER_VALUE": "0x0044",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x0051",
+          "REGISTER_VALUE": "0x0000",
+          "SLAVE_ADDRESS": "0x0090"
+        },
+        {
+          "REGISTER_ADDRESS": "0x00FF",
+          "REGISTER_VALUE": "0x00FF",
+          "SLAVE_ADDRESS": "0x0090"
+        }
+      ],
+      "I2C_SLAVE_ADDRESS": "0x90",
+      "I2C_SLAVE_DATA_SIZE": 1,
+      "I2C_SLAVE_REGISTER_SIZE": 0,
+      "I2C_FREQUENCY": 100000,
+      "HDMI_CONFIG_NUM_ROWS": 0,
+      "RESERVED": "FF"
+    }
+  ],
+  "UAC_SETTINGS": [
+    {
+      "ENDPOINT_SETTINGS": {
+        "BURST_LENGTH": 1,
+        "BUFFER_COUNT": 1,
+        "BUFFER_SIZE": 192,
+        "USED_BUFFER_SPACE": 384
+      },
+      "UAC_SETTING": {
+        "TERMINAL_TYPE": "Microphone",
+        "NUMBER_OF_CHANNELS": 2,
+        "CHANNEL_CONFIGURATION": {
+          "D0: Left Front (L)": "Enable",
+          "D1: Right Front (R)": "Enable",
+          "D2: Center Front (C)": "Disable",
+          "D3: Low Frequency Enhancement (LFE)": "Disable",
+          "D4: Left Surround (LS)": "Disable",
+          "D5: Right Surround (RS)": "Disable",
+          "D6: Left of Center (LC)": "Disable",
+          "D7: Right of Center (RC)": "Disable",
+          "D8: Surround (S)": "Disable",
+          "D9: Side Left (SL)": "Disable",
+          "D10: Side Right (SR)": "Disable",
+          "D11: Top (T)": "Disable"
+        },
+        "AUDIO_FORMAT": "PCM",
+        "BIT_RESOLUTION": "16 bit",
+        "NUMBER_OF_SAMPLING_FREQUENCIES": 1,
+        "RESERVED": "FF",
+        "SAMPLING_FREQUENCY_1": 48000,
+        "SAMPLING_FREQUENCY_2": 0,
+        "SAMPLING_FREQUENCY_3": 0,
+        "SAMPLING_FREQUENCY_4": 0,
+        "FEATURE_UNIT_CONTROLS": {
+          "D0: Mute": "Disable",
+          "D1: Volume": "Disable",
+          "D2: Bass": "Disable",
+          "D3: Mid": "Disable",
+          "D4: Treble": "Disable",
+          "D5: Graphic Equalizer": "Disable",
+          "D6: Automatic Gain": "Disable",
+          "D7: Delay": "Disable",
+          "D8: Bass Boost": "Disable",
+          "D9: Loudness": "Disable"
+        },
+        "SAMPLING_FQ_1_NUM_SENSOR_WRITES": 1,
+        "SAMPLING_FQ_2_NUM_SENSOR_WRITES": 0,
+        "SAMPLING_FQ_3_NUM_SENSOR_WRITES": 0,
+        "SAMPLING_FQ_4_NUM_SENSOR_WRITES": 0,
+        "SAMPLING_FREQUENCY_1_SENSOR_CONFIG": [
+          {
+            "REGISTER_ADDRESS": "0x0051",
+            "REGISTER_VALUE": "0x0000",
+            "SLAVE_ADDRESS": "0x0090"
+          }
+        ],
+        "SAMPLING_FREQUENCY_2_SENSOR_CONFIG": [],
+        "SAMPLING_FREQUENCY_3_SENSOR_CONFIG": [],
+        "SAMPLING_FREQUENCY_4_SENSOR_CONFIG": []
+      },
+      "RESERVED": "FF"
+    }
+  ]
+}

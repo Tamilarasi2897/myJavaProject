@@ -1,0 +1,222 @@
+package sx3Configuration.model;
+
+public class USBSettings {
+
+	private String VENDOR_ID;
+	private String PRODUCT_ID;
+	private int LEN_MANUFACTURER_STRING;
+	private String MANUFACTURER_STRING;
+	private int LEN_PRODUCT_STRING;
+	private String PRODUCT_STRING;
+	private String AUTO_GENERATE_SERIAL_NUMBER;
+	private int LEN_SERIALNUMBER;
+	private String SERIALNUMBER_STRING;
+	private int AUTO_INCREMENT_SERIAL_NUMBER;
+	private String REMOTE_WAKEUP_ENABLE;
+	private String POWER_CONFIGURATION;
+	private String CONFIG_DSCR_LENGTH_SS;
+	private String CONFIG_DSCR_LENGTH_HS;
+	private String CONFIG_DSCR_LENGTH_FS;
+	private int NUM_ENDPOINTS;
+	private String ENDPOINT1_TYPE;
+	private String ENDPOINT2_TYPE;
+	private int FIFO_BUS_WIDTH;
+	private int FIFO_CLOCK;
+	private String FIFO_INTERFACE_TYPE;
+	private String UVC_VERSION;
+	private String UVC_HEADER_ADDITION;
+	private String RESERVED;
+
+	public String getVENDOR_ID() {
+		return VENDOR_ID;
+	}
+
+	public void setVENDOR_ID(String vENDOR_ID) {
+		VENDOR_ID = vENDOR_ID;
+	}
+
+	public String getPRODUCT_ID() {
+		return PRODUCT_ID;
+	}
+
+	public void setPRODUCT_ID(String pRODUCT_ID) {
+		PRODUCT_ID = pRODUCT_ID;
+	}
+
+	public int getLEN_MANUFACTURER_STRING() {
+		return LEN_MANUFACTURER_STRING;
+	}
+
+	public void setLEN_MANUFACTURER_STRING(int lEN_MANUFACTURER_STRING) {
+		LEN_MANUFACTURER_STRING = lEN_MANUFACTURER_STRING;
+	}
+
+	public String getMANUFACTURER_STRING() {
+		return MANUFACTURER_STRING;
+	}
+
+	public void setMANUFACTURER_STRING(String mANUFACTURER_STRING) {
+		MANUFACTURER_STRING = mANUFACTURER_STRING;
+	}
+
+	public int getLEN_PRODUCT_STRING() {
+		return LEN_PRODUCT_STRING;
+	}
+
+	public void setLEN_PRODUCT_STRING(int lEN_PRODUCT_STRING) {
+		LEN_PRODUCT_STRING = lEN_PRODUCT_STRING;
+	}
+
+	public String getPRODUCT_STRING() {
+		return PRODUCT_STRING;
+	}
+
+	public String getAUTO_GENERATE_SERIAL_NUMBER() {
+		return AUTO_GENERATE_SERIAL_NUMBER;
+	}
+
+	public void setAUTO_GENERATE_SERIAL_NUMBER(String aUTO_GENERATE_SERIAL_NUMBER) {
+		AUTO_GENERATE_SERIAL_NUMBER = aUTO_GENERATE_SERIAL_NUMBER;
+	}
+
+	public void setPRODUCT_STRING(String pRODUCT_STRING) {
+		PRODUCT_STRING = pRODUCT_STRING;
+	}
+
+	public int getLEN_SERIALNUMBER() {
+		return LEN_SERIALNUMBER;
+	}
+
+	public void setLEN_SERIALNUMBER(int lEN_SERIALNUMBER) {
+		LEN_SERIALNUMBER = lEN_SERIALNUMBER;
+	}
+
+	public String getSERIALNUMBER_STRING() {
+		return SERIALNUMBER_STRING;
+	}
+
+	public void setSERIALNUMBER_STRING(String sERIALNUMBER_STRING) {
+		SERIALNUMBER_STRING = sERIALNUMBER_STRING;
+	}
+
+	public int getAUTO_INCREMENT_SERIAL_NUMBER() {
+		return AUTO_INCREMENT_SERIAL_NUMBER;
+	}
+
+	public void setAUTO_INCREMENT_SERIAL_NUMBER(int aUTO_INCREMENT_SERIAL_NUMBER) {
+		AUTO_INCREMENT_SERIAL_NUMBER = aUTO_INCREMENT_SERIAL_NUMBER;
+	}
+
+	public String getREMOTE_WAKEUP_ENABLE() {
+		return REMOTE_WAKEUP_ENABLE;
+	}
+
+	public void setREMOTE_WAKEUP_ENABLE(String rEMOTE_WAKEUP_ENABLE) {
+		REMOTE_WAKEUP_ENABLE = rEMOTE_WAKEUP_ENABLE;
+	}
+
+	public String getPOWER_CONFIGURATION() {
+		return POWER_CONFIGURATION;
+	}
+
+	public void setPOWER_CONFIGURATION(String pOWER_CONFIGURATION) {
+		POWER_CONFIGURATION = pOWER_CONFIGURATION;
+	}
+
+	public String getCONFIG_DSCR_LENGTH_SS() {
+		return CONFIG_DSCR_LENGTH_SS;
+	}
+
+	public void setCONFIG_DSCR_LENGTH_SS(String cONFIG_DSCR_LENGTH_SS) {
+		CONFIG_DSCR_LENGTH_SS = cONFIG_DSCR_LENGTH_SS;
+	}
+
+	public String getCONFIG_DSCR_LENGTH_HS() {
+		return CONFIG_DSCR_LENGTH_HS;
+	}
+
+	public void setCONFIG_DSCR_LENGTH_HS(String cONFIG_DSCR_LENGTH_HS) {
+		CONFIG_DSCR_LENGTH_HS = cONFIG_DSCR_LENGTH_HS;
+	}
+
+	public String getCONFIG_DSCR_LENGTH_FS() {
+		return CONFIG_DSCR_LENGTH_FS;
+	}
+
+	public void setCONFIG_DSCR_LENGTH_FS(String cONFIG_DSCR_LENGTH_FS) {
+		CONFIG_DSCR_LENGTH_FS = cONFIG_DSCR_LENGTH_FS;
+	}
+
+	public int getNUM_ENDPOINTS() {
+		return NUM_ENDPOINTS;
+	}
+
+	public void setNUM_ENDPOINTS(int nUM_ENDPOINTS) {
+		NUM_ENDPOINTS = nUM_ENDPOINTS;
+	}
+
+	public String getENDPOINT1_TYPE() {
+		return ENDPOINT1_TYPE;
+	}
+
+	public void setENDPOINT1_TYPE(String eNDPOINT1_TYPE) {
+		ENDPOINT1_TYPE = eNDPOINT1_TYPE;
+	}
+
+	public String getENDPOINT2_TYPE() {
+		return ENDPOINT2_TYPE;
+	}
+
+	public void setENDPOINT2_TYPE(String eNDPOINT2_TYPE) {
+		ENDPOINT2_TYPE = eNDPOINT2_TYPE;
+	}
+
+	public int getFIFO_BUS_WIDTH() {
+		return FIFO_BUS_WIDTH;
+	}
+
+	public void setFIFO_BUS_WIDTH(int fIFO_BUS_WIDTH) {
+		FIFO_BUS_WIDTH = fIFO_BUS_WIDTH;
+	}
+
+	public int getFIFO_CLOCK() {
+		return FIFO_CLOCK;
+	}
+
+	public void setFIFO_CLOCK(int fIFO_CLOCK) {
+		FIFO_CLOCK = fIFO_CLOCK;
+	}
+
+	public String getFIFO_INTERFACE_TYPE() {
+		return FIFO_INTERFACE_TYPE;
+	}
+
+	public void setFIFO_INTERFACE_TYPE(String fIFO_INTERFACE_TYPE) {
+		FIFO_INTERFACE_TYPE = fIFO_INTERFACE_TYPE;
+	}
+
+	public String getUVC_VERSION() {
+		return UVC_VERSION;
+	}
+
+	public void setUVC_VERSION(String uVC_VERSION) {
+		UVC_VERSION = uVC_VERSION;
+	}
+
+	public String getUVC_HEADER_ADDITION() {
+		return UVC_HEADER_ADDITION;
+	}
+
+	public void setUVC_HEADER_ADDITION(String uVC_HEADER_ADDITION) {
+		UVC_HEADER_ADDITION = uVC_HEADER_ADDITION;
+	}
+
+	public String getRESERVED() {
+		return RESERVED;
+	}
+
+	public void setRESERVED(String rESERVED) {
+		RESERVED = rESERVED;
+	}
+
+}

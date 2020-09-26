@@ -1,0 +1,58 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {-fx-border-color: orange}
+
+.anchorpane{
+	-fx-background-color: #D0D3D4;
+}
+
+
+.scrollpane{
+	-fx-background : #D0D3D4;
+}
+
+.vbox {
+	-fx-background-color: #D0D3D4;
+}
+
+.borderpane { 
+	-fx-background-color: #D0D3D4;
+}
+
+.table-column{
+    -fx-font-size : 10px;
+}
+
+.table-view {
+	-fx-border-insets: 4 1 1 1; 
+	-fx-border-color: black;
+	-fx-background-color: transparent;
+}
+
+.table-row-cell:empty {
+	 -fx-background-color: white;
+}
+
+.table-row-cell:disable {
+	 -fx-background-color: blue;
+}
+
+.table-view .table-cell {
+	-fx-font-weight: bold;
+}
+
+.text-field {
+	-fx-font-size: 13;
+}
+
+.text-field.error {
+  -fx-text-box-border: red ;
+  -fx-focus-color: red ;
+}
+
+.context-menu {
+  -fx-background-color: white;
+  -fx-text-fill: #FF0000;
+  -fx-padding: 0;
+}
+

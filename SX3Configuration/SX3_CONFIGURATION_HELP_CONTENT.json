@@ -1,0 +1,156 @@
+{
+	"DEVICE_NAME": "SX3 UVC",
+	"DEVICE_SETTINGS": {
+    "USB_SETTINGS": {
+      "VENDOR_ID": "<b>idVendor (assigned by USB-IF)</b> <br><a href='www.google.com'>ANCIT</a><br><a href='www.facebook.com'>ANCIT11</a>",
+      "PRODUCT_ID": "idProduct (assigned by the manufacturer) <a href='www.cypress.com'>ANCIT1</a>",
+      "MANUFACTURER_STRING": "Index of string descriptor describing manufacturer",
+      "PRODUCT_STRING": "Index of string descriptor describing product",
+	  "AUTO_GENERATE_SERIAL_NUMBER" : "Auto-generate unique serial number",
+      "SERIALNUMBER_STRING": "Index of string descriptor describing the devices serial number",
+      "AUTO_INCREMENT_SERIAL_NUMBER": "Select increment value. The serial number increments by  the chosen value every time the user clicks \"Program\" button",
+      "REMOTE_WAKEUP_ENABLE": "Enable remote wakeup option",
+      "POWER_CONFIGURATION": "Choose power configuration of the device",
+      "NUM_ENDPOINTS": "Choose number of Data streaming endpoints (Maximum 2 endpoints)",
+      "ENDPOINT1_TYPE": "Choose USB Video Class (UVC) for Video Choose USB Audio Class (UAC) for Audio",
+      "ENDPOINT2_TYPE": "Choose USB Video Class (UVC) for Video Choose USB Audio Class (UAC) for Audio",
+      "FIFO_BUS_WIDTH": "FIFO parallel bus width. Max = ",
+      "FIFO_CLOCK": "FIFO Clock. Max = 100",
+      "FIFO_INTERFACE_TYPE": "",
+      "UVC_VERSION": "UVC_VERSION",
+      "UVC_HEADER_ADDITION" : "Choose whether UVC header needs to be added by SX3 or FIFO Master"
+    },
+    "GPIOS_SETTINGS": {
+      "GPIO_1_SETTING": "GPIO 0 setting",
+      "GPIO_2_SETTING": "GPIO 1 setting",
+      "GPIO_3_SETTING": "GPIO 2 setting",
+      "GPIO_4_SETTING": "GPIO 3 setting",
+      "GPIO_5_SETTING": "GPIO 4 setting",
+      "GPIO_6_SETTING": "GPIO 5 setting",
+      "GPIO_7_SETTING": "GPIO 6 setting"
+    },
+    "DEBUG_LEVEL": {
+      "DEBUG_ENABLE": "Enable Debug via USB COM port",
+      "DEBUG_LEVEL": "0 = Only important messages, 4 = All messages"
+    },
+     "AUXILLIARY_INTERFACE": {
+      "FIRMWARE_UPDATE_HID": "Enable Firmware update over HID interface",
+      "I2C_FREQUENCY": "I2C Clock frequency"
+    }
+  },
+  "UVC_SETTINGS": {
+    "FORMAT_RESOLUTION": {
+            "S_NO": "",
+            "IMAGE_FORMAT": "Image format type",
+            "BITS_PER_PIXEL": "Bits per pixel for the chosen format type",
+            "H_RESOLUTION": "Frame Horizontal length (in pixels)",
+            "V_RESOLUTION": "Frame Verticacl Height (in pixels)",
+            "STILL_CAPTURE": "Enable still capture support",
+            "SUPPORTED_IN_LS": "Resolution supported in LS",
+            "SUPPORTED_IN_HS": "Resolution supported in HS",
+            "SUPPORTED_IN_SS": "Resolution supported in SS",
+            "FRAME_RATE_IN_LS": "Frame Rate in LS",
+            "FRAME_RATE_IN_HS": "Frame Rate in HS",
+            "FRAME_RATE_IN_SS": "Frame Rate in SS"
+         },
+    "COLOR_MATCHING": {
+        "COLOR_PRIMARIES": "bColorPrimaries for the color matching descriptors",
+        "TRANSFER_CHARACTERISTICS": "bTransferCharacteristics for color matching descriptor",
+        "MATRIX_COEFFICIENTS": "bMatrixCoefficients for the color matching descriptor"
+      },
+    "CAMERA_CONTROL": {
+		"AUTO_EXPOSURE_MODE" : "The Auto-Exposure Mode Control determines whether the device will \nprovide automatic adjustment of the Exposure Time and Iris controls",
+		"AUTO_EXPOSURE_PRIORITY" : "The Auto-Exposure Priority Control is used to specify constraints on the Exposure Time Control when\n the Auto-Exposure Mode Control is set to Auto Mode or Shutter Priority Mode.\n A value of zero indicates that the frame rate must remain constant.\n A value of 1 indicates that the frame rate may be dynamically varied by the device.\n The default value is zero (0).",
+		"EXPOSURE_TIME" : "The Exposure Time (Absolute) Control is used to specify the length of exposure.\n This value is expressed in 100µs units, where 1 is 1/10,000th of a second, 10,000 is 1 second, and 100,000 is 10 seconds.\n A value of zero (0) is undefined",
+		"FOCUS" : "The Focus (Absolute) Control is used to specify the distance to the optimally focused target.\n This value is expressed in millimeters.",
+		"IRIS" : "The Iris (Absolute) Control is used to specify the camera's aperture setting.\n This value is expressed in units of fstop * 100.",
+		"ZOOM" : "The Zoom (Absolute) Control is used to specify or determine the Objective lens focal length.",
+		"PAN_TILT" : "The PanTilt (Absolute) Control is used to specify the pan and tilt settings",
+		"ROLL" : "The Roll (Absolute) Control is used to specify the roll setting in degrees.\n Values range from –180 to +180, or a subset thereof, with the default being set to zero.",
+		"wROI_Top" : "Top coordinate In global sensor coordinates (pixels)",
+		"wROI_Left" : "Left coordinate In global sensor coordinates (pixels)",
+		"wROI_Bottom" : "Bottom coordinate In global sensor coordinates (pixels)",
+		"wROI_Right" : "Right coordinate In global sensor coordinates (pixels)",
+		"bmAutoControlsD0" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD1" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD2" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD3" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD4" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD5" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD6" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"bmAutoControlsD7" : "The bmAutoControls bitmask determines which, if any, on board features should track to the region of interest.",
+		"wWindow_Top" : "Top coordinate In global sensor coordinates (pixels)",
+		"wWindow_Left" : "Left coordinate In global sensor coordinates (pixels)",
+		"wWindow_Bottom" : "Bottom coordinate In global sensor coordinates (pixels)",
+		"wWindow_Right" : "Right coordinate In global sensor coordinates (pixels)",
+		"wWindow_NumSteps" : "Number of steps to move from current window to window specified by rectangle above.",
+		"bmNumStepsUnits" : "Units of number of steps specified above.\r\nD0: video frames\r\nD1: milliseconds"
+      },
+    "PROCESSING_UNIT_CONTROL": {
+        "BRIGHTNESS" : "This is used to specify the brightness. This is a relative value where increasing values indicate increasing brightness.",
+		"CONTRAST" : "This is used to specify the contrast value. This is a relative value where increasing values indicate increasing contrast",
+		"HUE" : "This is used to specify the hue setting. The value of the hue setting is expressed in degrees multiplied by 100.\n The required range must be a subset of -18000 to 18000 (-180 to +180 degrees).\n The default value must be zero",
+		"SATURATION" : "This is used to specify the saturation setting.\n This is a relative value where increasing values indicate increasing saturation. A Saturation value of 0 indicates grayscale",
+		"SHARPNESS" : "This is used to specify the sharpness setting. This is a relative value where increasing values indicate increasing sharpness,\n and the MIN value always implies \"no sharpness processing\", where the device will not process the video image to sharpen edges",
+		"GAMMA" : "This is used to specify the gamma setting. The value of the gamma setting is expressed in gamma multiplied by 100.\n The required range must be a subset of 1 to 500, and the default values are typically 100 (gamma = 1) or 220 (gamma = 2.2).",
+		"WHITE_BALANCE_TEMPERATURE" : "This is used to specify the white balance setting as a color temperature in degrees Kelvin.\n This is offered as an alternative to the White Balance Component control.\n Minimum range should be 2800 (incandescent) to 6500 (daylight) for webcams and dual-mode cameras",
+		"WHITE_BALANCE_COMPONENT" : "This is used to specify the white balance setting as Blue and Red values for video formats.\n This is offered as an alternative to the White Balance Temperature control.\n The supported range and default value for white balance components is implementation-dependent. \nThe device shall interpret the controls as blue and red pairs.",
+		"BACKLIGHT_COMPENSATION" : "The Backlight Compensation Control is used to specify the backlight compensation. A value of zero indicates that the backlight compensation is disabled.\n A non-zero value indicates that the backlight compensation is enabled. The device may support a range of values, or simply a binary switch.\n If a range is supported, a low number indicates the least amount of backlight compensation.",
+		"GAIN" : "This is used to specify the gain setting.\n This is a relative value where increasing values indicate increasing gain.",
+		"POWER_LINE_FREQUENCY" : "This control allows the host software to specify the local power line frequency, \nin order for the device to properly implement anti-flicker processing, if supported",
+		"HUE_AUTO" : "The Hue Auto Control setting determines whether the device will provide automatic adjustment of the related control.\n A value of 1 indicates that automatic adjustment is enabled.",
+		"WHITE_BALANCE_TEMPERATURE_AUTO" : "The White Balance Temperature Auto Control setting determines whether the device will provide automatic adjustment of the related control.\n A value of 1 indicates that automatic adjustment is enabled.",
+		"WHITE_BALANCE_COMPONENT_AUTO" : "This is used to specify the white balance setting as Blue and Red values for video formats.\n This is offered as an alternative to the White Balance Temperature control.\n The supported range and default value for white balance components is implementation-dependent."
+      },
+    "EXTENSION_UNIT_CONTROL": {
+        "DEVICE_RESET_VENDOR_COMMAND_ENABLED": "Support vendor command for Device Reset",
+        "I2C_READ_VENDOR_COMMAND_ENABLED": "Support vendor command for I2C Register Read",
+        "I2C_WRITE_VENDOR_COMMAND_ENABLED": "Support vendor command for I2C Register Write",
+        "FIRMWARE_UPDATE_ENABLED": "Support firmware update via extension unit"
+      }
+    },
+  "UAC_SETTINGS": {
+    "TERMINAL_TYPE": "The wTerminalType field provides pertinent information about the physical entity that the Input Terminal represents. \nThis could be a USB OUT endpoint, an external Line In connection, a microphone, etc. \nA complete list of Terminal Type codes is provided in a separate document, USB Audio Terminal Types, that is considered part of USB Audio Class specification.",
+    "NUMBER_OF_CHANNELS": "Number of logical output channels in the Terminal’s output audio channel cluster",
+    "CHANNEL_CONFIGURATION": "Describes the spatial location of the logical channels.",
+	"AUDIO_FORMAT" : "The wFormatTag field in the class-specific AS Interface Descriptor implicitly indicates which Format.\n Type should be used to communicate with the connection (USB or external) this interface represents.\n Each Audio Data Format belongs to a certain Format Type as outlined in USB Audio Data Formats.",
+    "BIT_RESOLUTION" : "Bit resolution of each sample.",
+	"NUMBER_OF_SAMPLING_FREQUENCIES": "Number of sampling frequencies supported",
+    "SAMPLING_FREQUENCY_1": "Sampling frequency",
+    "SAMPLING_FREQUENCY_2": "Sampling frequency",
+    "SAMPLING_FREQUENCY_3": "Sampling frequency",
+    "SAMPLING_FREQUENCY_4": "Sampling frequency",
+    "FEATURE_UNIT_CONTROLS": ""
+    },
+  "FIFO_MASTER_CONFIG": {
+    "FIFO_MASTER_CONFIGURATION_DOWNLOAD_EN": "Enable FIFO master configuration from SX3",
+    "BIT_FILE_PATH": "Choose configuration file",
+    "FPGA_FAMILY": "Choose the FPGA Family being used in the design",
+    "I2C_SLAVE_ADDRESS": "I2C Slave address for the FIFO Master",
+    "I2C_FREQUENCY": "I2C Clock frequency"
+  },
+  "VIDEO_SOURCE_CONFIG":
+    {
+	  "VIDEO_SOURCE_TYPE" : "Select Video Source Type",
+	  "VIDEO_SOURCE_SUB_TYPE" : "Select Video Source Subtype",
+      "ENABLE_VIDEO_SOURCE_CONFIGURATION_DOWNLOAD": "Enable_video_source_configuration_download",
+	  "VIDEO_SOURCE_CONFIG_FILE_PATH" : "Select Json file.",
+	  "I2C_SLAVE_ADDRESS" : "I2C Slave address for Video Source",
+	  "I2C_SLAVE_DATA_SIZE" : "Data Size for I2C Registers in Video Source",
+	  "I2C_SLAVE_REGISTER_SIZE" : "Register Address size for I2C Registers in Video Source",
+      "I2C_FREQUENCY": "I2C Clock frequency for Video Source"
+    },
+	"ENDPOINT_SETTINGS": {
+		"ENDPOINT_TRANSFER_TYPE": "Type of endpoint (Bulk/ISOC)",
+        "BURST_LENGTH": "Choose the number of burst per transfer",
+        "BUFFER_COUNT": "Choose the number of buffers per endpoint",
+        "BUFFER_SIZE": "Choose the size (in bytes) for each buffer (should be a multiple of 16)",
+        "USED_BUFFER_SPACE": "Amount of buffer size used by active endpoints"
+      },
+	  "SLAVE_FIFO_SETTINGS":{
+		"BURST_LENGTH" : "Choose the number of burst per transfer",
+		"BUFFER_COUNT" : "Choose the number of buffers per endpoint",
+		"BUFFER_SIZE" : "Choose the size (in bytes) for each buffer",
+		"BUFFER_SPACE" : "Amount of buffer size used by active endpoints"
+	}
+}

@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<SplitPane fx:id="root" dividerPositions="0.75" orientation="VERTICAL" prefHeight="950.0" prefWidth="1410.0" styleClass="borderpane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+	<items>
+		<AnchorPane minHeight="0.0" minWidth="0.0">
+			<children>
+				<BorderPane styleClass="borderpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<top>
+						<VBox BorderPane.alignment="CENTER">
+							<children>
+								<MenuBar>
+									<menus>
+										<Menu mnemonicParsing="false" text="File">
+											<items>
+												<MenuItem mnemonicParsing="false" onAction="#createNewConfiguration" text="New Configuration">
+													<accelerator>
+														<KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+													</accelerator>
+												</MenuItem>
+												<MenuItem fx:id="saveConfigFromMenu" disable="true" mnemonicParsing="false" onAction="#saveConfiguration" text="Save Configuration">
+													<accelerator>
+														<KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+													</accelerator>
+												</MenuItem>
+												<MenuItem mnemonicParsing="false" onAction="#loadConfiguration" text="Import Configuration">
+													<accelerator>
+														<KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+													</accelerator>
+												</MenuItem>
+                                    <MenuItem mnemonicParsing="false" onAction="#exportConfiguration" text="Export Configuration">
+                                      
+                                    </MenuItem>
+                                    <MenuItem fx:id="saveAsConfigFromMenu" mnemonicParsing="false" onAction="#saveAsConfiguration" text="Save As ..." />
+												<Menu mnemonicParsing="false" text="Theme" visible="false">
+													<items>
+														<MenuItem disable="true" mnemonicParsing="false" onAction="#setDarkStyle" text="Dark Style" visible="false">
+														</MenuItem>
+														<MenuItem mnemonicParsing="false" onAction="#setDefaultStyle" text="Default Style" visible="false">
+														</MenuItem>
+													</items>
+												</Menu>
+												<MenuItem mnemonicParsing="false" onAction="#exitApplication" text="Exit">
+													<accelerator>
+														<KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+													</accelerator>
+												</MenuItem>
+											</items>
+										</Menu>
+										<Menu fx:id="programConfigFromMenuBar" disable="true" mnemonicParsing="false" text="Utility">
+											<items>
+												<MenuItem mnemonicParsing="false" onAction="#programConfiguration" text="Program">
+												</MenuItem>
+											</items>
+										</Menu>
+										<Menu mnemonicParsing="false" text="Help">
+											<items>
+												<MenuItem mnemonicParsing="false" onAction="#OpenHelpContentPage" text="Help" />
+												<MenuItem mnemonicParsing="false" onAction="#showInformationPage" text="About" />
+											</items>
+										</Menu>
+									</menus>
+								</MenuBar>
+								<ToolBar>
+									<items>
+										<Button fx:id="newConfig" mnemonicParsing="false" onAction="#createNewConfiguration">
+											<graphic>
+												<ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../resources/newConfiguration.png" />
+													</image>
+												</ImageView>
+											</graphic>
+										</Button>
+										<Button fx:id="saveConfigFromToolBar" disable="true" mnemonicParsing="false" onAction="#saveConfiguration">
+											<graphic>
+      												<ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+      													<image>
+      														<Image url="@../../../resources/save.png" />
+      													</image>
+      												</ImageView>
+											</graphic>
+										</Button>
+										<Button fx:id="openConfig" mnemonicParsing="false" onAction="#loadConfiguration">
+											<graphic>
+												<ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../resources/import.gif" />
+													</image>
+												</ImageView>
+											</graphic>
+										</Button>
+                              <Button fx:id="exportConfiguration" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#exportConfiguration">
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../resources/export.gif" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+										<Button fx:id="undo" disable="true" mnemonicParsing="false">
+											<graphic>
+												<ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../resources/undo.png" />
+													</image>
+												</ImageView>
+											</graphic>
+										</Button>
+										<Button fx:id="redo" disable="true" mnemonicParsing="false">
+											<graphic>
+												<ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../resources/redo.png" />
+													</image>
+												</ImageView>
+											</graphic>
+										</Button>
+										<Button fx:id="programConfigFromToolBar" disable="true" mnemonicParsing="false" onAction="#programConfiguration">
+											<graphic>
+												<ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+													<image>
+														<Image url="@../../../resources/program.png" />
+													</image>
+												</ImageView>
+											</graphic>
+										</Button>
+										<Button mnemonicParsing="false" text="Button" visible="false" />
+										<Button mnemonicParsing="false" text="Button" visible="false" />
+										<Label text="Device : " />
+										<Label fx:id="deviceName" text="" />
+									</items>
+								</ToolBar>
+							</children>
+						</VBox>
+					</top>
+					<bottom>
+
+					</bottom>
+					<center>
+						<VBox BorderPane.alignment="CENTER">
+							<children>
+								 <AnchorPane fx:id="welcomeScreen" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<children>
+										<WebView fx:id="startScreen" prefHeight="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+										</WebView>
+									</children>
+								</AnchorPane> 
+								<TabPane fx:id="deviceSettingsTabSplitpane" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE" visible="false" VBox.vgrow="ALWAYS">
+									<tabs>
+										<Tab fx:id="deviceSettingsTab" onSelectionChanged="#selectDeviceSettingsTab" text="Device Settings">
+											<content>
+												<SplitPane orientation="VERTICAL">
+													<items>
+														<AnchorPane minHeight="0.0" minWidth="0.0" styleClass="anchorpane">
+															<children>
+																<ScrollPane layoutX="6.0" styleClass="scrollpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+																	<content>
+																		<VBox>
+																			<children>
+																				<BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+																					<top>
+																						<VBox prefHeight="10.0" BorderPane.alignment="CENTER" />
+																					</top>
+																					<left>
+																						<VBox BorderPane.alignment="CENTER">
+																							<children>
+																								<AnchorPane layoutX="4.0" layoutY="5.0" style="-fx-border-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-5.0" style="-fx-background-color: inherit;" text="USB Settings" />
+																										<GridPane layoutX="3.0" layoutY="20.0" vgap="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="25.0" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												<Label text="Vendor ID* : ">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<TextField fx:id="vendorId" alignment="CENTER_RIGHT" onKeyTyped="#vendorIdValidation" onMouseClicked="#showVendorIdHelp" text="04b4" GridPane.columnIndex="2">
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Label text="Product ID* : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<TextField fx:id="productId" alignment="CENTER_RIGHT" onKeyTyped="#productIdValidation" onMouseClicked="#showProductIdHelp" text="" GridPane.columnIndex="2" GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Label text="Manufacturer* : " GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<TextField fx:id="manufacture" alignment="CENTER_RIGHT" onKeyTyped="#manufactureValidation" onMouseClicked="#showManufactureHelp" text="Cypress" GridPane.columnIndex="2" GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Label text="Product String* : " GridPane.rowIndex="3">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<TextField fx:id="productString" alignment="CENTER_RIGHT" onKeyTyped="#productStringValidation" onMouseClicked="#showProductStringHelp" text="SX3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Label text="Auto-Generate Serial Number : " GridPane.rowIndex="4">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<CheckBox fx:id="autoGenerateSerialNumber" mnemonicParsing="false" onAction="#logAutoGenerateSerialNo" onMouseClicked="#showAutoGenerateSerialNoHelp" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+																												<Label text="Serial Number* : " GridPane.rowIndex="5">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<TextField fx:id="serialNumber" alignment="CENTER_RIGHT" onKeyTyped="#serialNumberValidation" onMouseClicked="#showSerialNoHelp" onMouseExited="#hideSerialNumberRichText" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+																												<Label text="Serial Number Increment : " GridPane.rowIndex="6">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="serialNumberIncrement" onAction="#logSerialNumberIncrement" onMouseClicked="#showSerialNoIncrementHelp" GridPane.columnIndex="2" GridPane.rowIndex="6">
+																													<items>
+																														<FXCollections fx:factory="observableArrayList">
+																															<String fx:value="0" />
+																															<String fx:value="1" />
+																															<String fx:value="2" />
+																															<String fx:value="3" />
+																															<String fx:value="4" />
+																															<String fx:value="5" />
+																															<String fx:value="6" />
+																															<String fx:value="7" />
+																															<String fx:value="8" />
+																															<String fx:value="9" />
+																														</FXCollections>
+																													</items>
+																													<value>
+																														<String fx:value="0" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="Enable Remote Wakeup : " GridPane.rowIndex="7">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<CheckBox fx:id="enableRemoteWakeup" mnemonicParsing="false" onAction="#logRemoteWakeup" onMouseClicked="#showEnableRemoteWakeupHelp" GridPane.columnIndex="2" GridPane.rowIndex="7">
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</CheckBox>
+																												<Label text="Power Configuration* : " GridPane.rowIndex="8">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="powerConfiguration" onAction="#logPowerConfiguration" onMouseClicked="#showPowerConfigurationHelp" GridPane.columnIndex="2" GridPane.rowIndex="8">
+																													<items>
+																														<FXCollections fx:factory="observableArrayList">
+																															<String fx:value="Self Powered" />
+																															<String fx:value="Bus Powered" />
+																														</FXCollections>
+																													</items>
+																													<value>
+																														<String fx:value="Bus Powered" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="0.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="37.0" text="0x" GridPane.columnIndex="1" />
+																												<Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="37.0" text="0x" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+																											</children>
+																										</GridPane>
+																									</children>
+																								</AnchorPane>
+																								<AnchorPane layoutX="4.0" style="-fx-border-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-5.0" style="-fx-background-color: inherit;" text="FIFO Settings" />
+																										<GridPane layoutX="3.0" layoutY="20.0" vgap="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																											<Label text="FIFO Interface Type : ">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ChoiceBox fx:id="interFaceType" onMouseClicked="#logInterfaceType" GridPane.columnIndex="1">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ChoiceBox>
+																												<Label text="FIFO Clock Frequency (MHz) : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<TextField fx:id="fifoClockFrequency" alignment="CENTER_RIGHT" maxWidth="40.0" onKeyTyped="#fifoClockFrequencyValidation" onMouseClicked="#showFifoClockFrequencyHelp" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																												</TextField>
+																												<Label text="FIFO Parallel Bus Width : " GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="fifoBusWidth" onAction="#logFifoBusWidth" onMouseClicked="#showFifoBusWidthHelp" GridPane.columnIndex="1" GridPane.rowIndex="2">
+																												</ComboBox>
+																											</children>
+																										</GridPane>
+																									</children>
+																									<VBox.margin>
+																										<Insets top="15.0" />
+																									</VBox.margin>
+																								</AnchorPane>
+																							</children>
+																						</VBox>
+																					</left>
+																					<center>
+																						<VBox BorderPane.alignment="CENTER">
+																							<children>
+																								<AnchorPane layoutX="4.0" layoutY="5.0" style="-fx-border-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-5.0" style="-fx-background-color: inherit;" text="GPIOs" />
+																										<GridPane layoutX="3.0" layoutY="20.0" vgap="5.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												<Label text="GPIO 0 : ">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio1" onAction="#logGpio1" onMouseClicked="#loadGpio1List" GridPane.columnIndex="1">
+																													<value>
+																														<String fx:value="Not used" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="GPIO 1 : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio2" onAction="#logGpio2" onMouseClicked="#loadGpio2List" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																													<value>
+																														<String fx:value="Not used" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="GPIO 2 : " GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio3" onAction="#logGpio3" onMouseClicked="#loadGpio3List" GridPane.columnIndex="1" GridPane.rowIndex="2">
+																													<value>
+																														<String fx:value="Not used" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="GPIO 3 : " GridPane.rowIndex="3">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio4" onAction="#logGpio4" onMouseClicked="#loadGpio4List" GridPane.columnIndex="1" GridPane.rowIndex="3">
+																													<value>
+																														<String fx:value="Not used" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="GPIO 4 : " GridPane.rowIndex="4">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio5" onAction="#logGpio5" onMouseClicked="#loadGpio5List" GridPane.columnIndex="1" GridPane.rowIndex="4">
+																													<value>
+																														<String fx:value="Not used" />
+																													</value>
+																												</ComboBox>
+																												<Label text="GPIO 5 : " GridPane.rowIndex="5">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio6" onAction="#logGpio6" onMouseClicked="#loadGpio6List" GridPane.columnIndex="1" GridPane.rowIndex="5">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="GPIO 6 : " GridPane.rowIndex="6">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="gpio7" onAction="#logGpio7" onMouseClicked="#loadGpio7List" GridPane.columnIndex="1" GridPane.rowIndex="6">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																											</children>
+																										</GridPane>
+																									</children>
+																									<opaqueInsets>
+																										<Insets left="10.0" />
+																									</opaqueInsets>
+																									<VBox.margin>
+																										<Insets left="25.0" />
+																									</VBox.margin>
+																								</AnchorPane>
+																								<AnchorPane layoutX="4.0" style="-fx-border-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-5.0" style="-fx-background-color: inherit;" text="Auxilliary Interface" />
+																										<GridPane layoutX="3.0" layoutY="20.0" vgap="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												<Label text="Firmware Update : ">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<CheckBox fx:id="deviceSttingFirmWare" onMouseClicked="#showDeviceSettingFirmwareHelp" GridPane.columnIndex="1">
+																												
+																												</CheckBox>
+																												<Label text="I2C Frequency(Hz) : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="deviceSttingI2CFrequency" onMouseClicked="#showDeviceSettingI2CFrequencyHelp" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																											</children>
+																										</GridPane>
+																									</children>
+																									<VBox.margin>
+																										<Insets left="25.0" top="25.0" />
+																									</VBox.margin>
+																								</AnchorPane>
+																							</children>
+																						</VBox>
+																					</center>
+																					<right>
+																						<VBox BorderPane.alignment="CENTER">
+																							<children>
+																								<AnchorPane layoutX="4.0" layoutY="5.0" style="-fx-border-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-6.0" style="-fx-background-color: inherit;" text="Debug" />
+																										<GridPane layoutX="3.0" layoutY="20.0" vgap="5.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												<Label text="Debug enable : ">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<CheckBox fx:id="enableDebugLevel" mnemonicParsing="false" onAction="#enableDebugLevel" onMouseClicked="#showDebugEnableHelp" GridPane.columnIndex="1" />
+																												<Label text="Debug Level : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="debugValue" disable="true" onAction="#logDebugLevel" onMouseClicked="#showDebugLevelHelp" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																													<items>
+																														<FXCollections fx:factory="observableArrayList">
+																															<String fx:value="0" />
+																															<String fx:value="1" />
+																															<String fx:value="2" />
+																															<String fx:value="3" />
+																															<String fx:value="4" />
+																														</FXCollections>
+																													</items>
+																													<value>
+																														<String fx:value="" />
+																													</value>
+																												</ComboBox>
+																											</children>
+																										</GridPane>
+																									</children>
+																									<VBox.margin>
+																										<Insets bottom="25.0" left="25.0" />
+																									</VBox.margin>
+																								</AnchorPane>
+																								<AnchorPane layoutX="4.0" layoutY="150.0" style="-fx-background-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-10.0" style="-fx-background-color: inherit;" text="Endpoints" />
+																										<GridPane layoutX="3.0" layoutY="10.0" vgap="5.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												 <Label text="Endpoint 1 : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label> 
+																												<ChoiceBox fx:id="Endpoint_1" onMouseClicked="#showEndpoinOnetHelp" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ChoiceBox>
+																												<Label text="Endpoint 2 : " GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ChoiceBox fx:id="Endpoint_2" onMouseClicked="#showEndpoinTwoHelp" GridPane.columnIndex="1" GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets bottom="5.0" right="5.0" />
+																													</GridPane.margin>
+																												</ChoiceBox>
+																											</children>
+																										</GridPane>
+																									</children>
+																									<VBox.margin>
+																										<Insets left="25.0" />
+																									</VBox.margin>
+																								</AnchorPane>
+																								<AnchorPane layoutX="4.0" style="-fx-background-insets: 4 1 1 1; -fx-border-color: black;" styleClass="anchorpane">
+																									<children>
+																										<GridPane layoutX="3.0" layoutY="20.0" vgap="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												<Label text="UVC Version : ">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="uvcVersion" disable="true" onAction="#logUVCVersion" onMouseClicked="#showUVCVersionHelpContent" GridPane.columnIndex="1">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<Label text="UVC Header Addition : " GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets left="5.0" />
+																													</GridPane.margin>
+																												</Label>
+																												<ComboBox fx:id="uvcHeaderAddition" disable="true" onAction="#logUVCHeaderAddition" onMouseClicked="#showUVCHeaderAdditionHelpContent" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																											</children>
+																										</GridPane>
+																									</children>
+																									<VBox.margin>
+																										<Insets left="25.0" top="30.0" />
+																									</VBox.margin>
+																								</AnchorPane>
+																							</children>
+																						</VBox>
+																					</right>
+																					<bottom>
+																						<VBox prefHeight="10.0" BorderPane.alignment="CENTER" />
+																					</bottom>
+																				</BorderPane>
+																			</children>
+																		</VBox>
+																	</content>
+																</ScrollPane>
+															</children>
+														</AnchorPane>
+													</items>
+												</SplitPane>
+											</content>
+										</Tab>
+										<Tab fx:id="videoSourceConfigTab" disable="true" text="Video/Audio Source Config">
+											<content>
+												<TabPane fx:id="videoSourceConfigTabpane" tabClosingPolicy="UNAVAILABLE">
+													<tabs>
+
+													</tabs>
+												</TabPane>
+											</content>
+										</Tab>
+										<Tab fx:id="uvcuacSettingsTab" disable="true" onSelectionChanged="#selectUVCUACTab" text="UVC/UAC Settings">
+											<content>
+												<TabPane fx:id="uvcuacTabpane" tabClosingPolicy="UNAVAILABLE">
+													<tabs>
+
+													</tabs>
+												</TabPane>
+											</content>
+										</Tab>
+										<Tab fx:id="fifoMasterConfigTab" disable="true" onSelectionChanged="#selectFifoMasterTab" text="FIFO Master Config">
+											<content>
+												<AnchorPane minHeight="0.0" minWidth="0.0">
+													<children>
+														<SplitPane layoutY="7.0" orientation="VERTICAL" styleClass="anchorpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+															<items>
+																<AnchorPane minHeight="0.0" minWidth="0.0">
+																	<children>
+																		<ScrollPane layoutX="14.0" layoutY="14.0" styleClass="scrollpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+																			<content>
+																				<VBox styleClass="vbox">
+																					<children>
+																						<AnchorPane styleClass="anchorpane">
+																							<children>
+																								<GridPane layoutX="20.0" layoutY="14.0">
+																									<columnConstraints>
+																										<ColumnConstraints hgrow="SOMETIMES" />
+																										<ColumnConstraints hgrow="SOMETIMES" />
+																									</columnConstraints>
+																									<rowConstraints>
+																										<RowConstraints vgrow="SOMETIMES" />
+																									</rowConstraints>
+																								</GridPane>
+																								<AnchorPane layoutX="20.0" layoutY="20.0" style="-fx-background-color: #D0D3D4; -fx-background-insets: 4 1 1 1; -fx-border-color: black;">
+																									<children>
+																										<Label layoutX="5.0" layoutY="-9.0" style="-fx-background-color: inherit;" text="Configuration Download" />
+																										<GridPane hgap="20.0" layoutX="3.0" layoutY="11.0" vgap="15.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+																											</rowConstraints>
+																											<children>
+																												<Label text="Enable FPGA Configuration Download : ">
+																													<padding>
+																														<Insets left="10.0" />
+																													</padding>
+																												</Label>
+																												<CheckBox fx:id="enableFPGA" mnemonicParsing="false" onAction="#enableFPGA" onMouseClicked="#showEnableFPGAHelp" GridPane.columnIndex="1" />
+																												<Label text="FPGA Family : " GridPane.rowIndex="1">
+																													<padding>
+																														<Insets left="10.0" />
+																													</padding>
+																												</Label>
+																												<ComboBox fx:id="fpgaFamily" disable="true" onAction="#selectFPGAFamily" onMouseClicked="#showFPGAFamilyHelp" GridPane.columnIndex="1" GridPane.rowIndex="1">
+																													<items>
+																														<FXCollections fx:factory="observableArrayList">
+																															<String fx:value="Xilinx Artix 7" />
+																															<String fx:value="Intel (Altera) Cyclone 10 LP" />
+																															<String fx:value="Lattice ECP5" />
+																															<String fx:value="Lattice Crosslink" />
+																														</FXCollections>
+																													</items>
+																													<value>
+																														<String fx:value="Lattice ECP5" />
+																													</value>
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</ComboBox>
+																												<TextField fx:id="chooseBitFile" disable="true" layoutX="5.0" onMouseClicked="#showChooseBitFile" prefWidth="300.0" promptText="Choose .bit file" GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets left="10.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Button fx:id="browseBitFile" disable="true" mnemonicParsing="false" onAction="#selectBitFile" onMouseClicked="#showChooseBitFile" text="Browse" GridPane.columnIndex="1" GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</Button>
+																												<Label text="Bit File Size (Bytes) : " GridPane.rowIndex="3">
+																													<padding>
+																														<Insets bottom="10.0" left="10.0" />
+																													</padding>
+																												</Label>
+																												<TextField fx:id="bitFileSize" disable="true" prefWidth="40" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+																													<GridPane.margin>
+																														<Insets bottom="10.0" right="5.0" />
+																													</GridPane.margin>
+																												</TextField>
+																											</children>
+																										</GridPane>
+																									</children>
+																								</AnchorPane>
+																								<AnchorPane layoutX="20.0" layoutY="220.0" style="-fx-background-color: #D0D3D4; -fx-background-insets: 4 1 1 1; -fx-border-color: black;">
+																									<children>
+																										<Label layoutX="6.0" layoutY="-9.0" style="-fx-background-color: inherit;" text="FPGA I2C Settings" />
+																										<GridPane layoutX="3.0" layoutY="11.0" vgap="10.0">
+																											<columnConstraints>
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																												<ColumnConstraints hgrow="SOMETIMES" />
+																											</columnConstraints>
+																											<rowConstraints>
+																												<RowConstraints vgrow="SOMETIMES" />
+																												<RowConstraints vgrow="SOMETIMES" />
+                                                                                    <RowConstraints />
+																											</rowConstraints>
+																											<children>
+																												<Label text="FPGA I2C Slave address* : ">
+																													<padding>
+																														<Insets left="10.0" />
+																													</padding>
+																												</Label>
+																												<Label layoutX="5.0" text="0x" GridPane.columnIndex="1" />
+																												<TextField fx:id="i2cSlaveAddress" alignment="CENTER_RIGHT" maxWidth="40.0" onKeyTyped="#fifoMasterSlaveAddressValidation" onMouseClicked="#showFPGASlaveAddressHelp" GridPane.columnIndex="2">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Label text="FIFO Master I2C Address Width : " GridPane.rowIndex="1">
+																													<padding>
+																														<Insets left="10.0" />
+																													</padding>
+																												</Label>
+																												<TextField alignment="CENTER_RIGHT" disable="true" maxWidth="40.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="1">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</TextField>
+																												<Label text="FIFO Master I2C Data Width : " GridPane.rowIndex="2">
+																													<padding>
+																														<Insets left="10.0" />
+																													</padding>
+																												</Label>
+																												<TextField alignment="CENTER_RIGHT" disable="true" maxWidth="40.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2">
+																													<GridPane.margin>
+																														<Insets right="5.0" />
+																													</GridPane.margin>
+																												</TextField>
+																											</children>
+																										</GridPane>
+																									</children>
+																								</AnchorPane>
+																							</children>
+																						</AnchorPane>
+																					</children>
+																				</VBox>
+																			</content>
+																		</ScrollPane>
+																	</children>
+																</AnchorPane>
+															</items>
+														</SplitPane>
+													</children>
+												</AnchorPane>
+											</content>
+										</Tab>
+										<Tab fx:id="slaveFifoSettingsTab" disable="true" onSelectionChanged="#selectSlaveFifoSettingsTab" text="Slave FIFO Settings">
+											<content>
+												<TabPane fx:id="slaveFifoSettingsTabpane" tabClosingPolicy="UNAVAILABLE">
+													<tabs>
+
+													</tabs>
+												</TabPane>
+											</content>
+										</Tab>
+									</tabs>
+								</TabPane>
+							</children>
+						</VBox>
+					</center>
+					<right>
+						<VBox prefHeight="245.0" prefWidth="15.0" style="-fx-background-color: #D0D3D4;" BorderPane.alignment="CENTER" />
+					</right>
+					<left>
+						<VBox prefHeight="245.0" prefWidth="13.0" style="-fx-background-color: #D0D3D4;" BorderPane.alignment="CENTER" />
+					</left>
+				</BorderPane>
+
+			</children>
+		</AnchorPane>
+		<AnchorPane fx:id="logHelpSplitpane">
+			<children>
+				<BorderPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+					<center>
+						<TabPane layoutX="14.0" layoutY="7.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<tabs>
+								<Tab fx:id="logTab" text="Log">
+									<content>
+										<AnchorPane>
+											<children>
+												<BorderPane layoutX="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+													<center>
+														<WebView fx:id="logDetails1" prefHeight="100.0" BorderPane.alignment="CENTER" />
+													</center>
+													<right>
+														<AnchorPane prefWidth="80.0" BorderPane.alignment="CENTER">
+															<children>
+																<Button fx:id="saveLog" layoutX="10.0" layoutY="6.0" mnemonicParsing="false" onAction="#saveLog" text="" />
+																<Button fx:id="clearLog" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#clearLogConsole" text="" />
+															</children>
+														</AnchorPane>
+													</right>
+												</BorderPane>
+											</children>
+										</AnchorPane>
+									</content>
+								</Tab>
+								<Tab fx:id="helpTab" text="Help">
+									<content>
+										<AnchorPane>
+											<children>
+												<WebView fx:id="helpContent" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+											</children>
+										</AnchorPane>
+									</content>
+								</Tab>
+							</tabs>
+						</TabPane>
+					</center>
+					<bottom>
+						<GridPane>
+							<columnConstraints>
+								<ColumnConstraints hgrow="SOMETIMES" />
+								<ColumnConstraints hgrow="SOMETIMES" />
+								<ColumnConstraints hgrow="SOMETIMES" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<Label fx:id="versionId" prefHeight="17.0" prefWidth="133.0" />
+								<Label fx:id="logFileName" text="" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+								<ProgressBar fx:id="progressBar" prefHeight="20.0" prefWidth="300.0" progress="0.0" visible="false" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+									<GridPane.margin>
+										<Insets right="15.0" />
+									</GridPane.margin>
+								</ProgressBar>
+							</children>
+						</GridPane>
+					</bottom>
+				</BorderPane>
+			</children>
+		</AnchorPane>
+	</items>
+</SplitPane>

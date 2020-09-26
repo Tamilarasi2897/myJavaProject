@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SX3Configuration.jnlp">
+  <information>
+    <title>SX3Configuration</title>
+    <vendor>ANCIT Consulting</vendor>
+    <description>SX3ConfigurationUtility</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SX3Configuration.jar" size="749941" download="eager" />
+    <jar href="libs\commons-lang3-3.10.jar" size="523372" download="eager" />
+    <jar href="libs\configureme-2.3.0.jar" size="90989" download="eager" />
+    <jar href="libs\gson-2.3.1.jar" size="210856" download="eager" />
+    <jar href="libs\libusb4java-1.3.0-win32-x86-64.jar" size="164725" download="eager" />
+    <jar href="libs\libusb4java-1.3.0-win32-x86.jar" size="149065" download="eager" />
+    <jar href="libs\usb-api-1.0.2.jar" size="27526" download="eager" />
+    <jar href="libs\usb4java-1.3.0.jar" size="49868" download="eager" />
+    <jar href="libs\usb4java-javax-1.3.0.jar" size="62708" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="sx3Configuration.ui.Main"  name="SX3ConfigurationUtility" />
+  <update check="background"/>
+</jnlp>

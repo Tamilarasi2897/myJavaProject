@@ -1,0 +1,36 @@
+package sx3Configuration.model;
+
+import java.util.List;
+
+public class FormatAndResolution {
+
+	private int TOTAL_NUMBER_OF_RESOLUTIONS;
+	private int TOTAL_NUMBER_OF_IMAGE_FORMATS;
+	private List<FormatAndResolutions> FORMAT_RESOLUTIONS;
+
+	public int getTOTAL_NUMBER_OF_RESOLUTIONS() {
+		return TOTAL_NUMBER_OF_RESOLUTIONS;
+	}
+
+	public void setTOTAL_NUMBER_OF_RESOLUTIONS(int tOTAL_NUMBER_OF_RESOLUTIONS) {
+		TOTAL_NUMBER_OF_RESOLUTIONS = tOTAL_NUMBER_OF_RESOLUTIONS;
+	}
+
+	public int getTOTAL_NUMBER_OF_IMAGE_FORMATS() {
+		return TOTAL_NUMBER_OF_IMAGE_FORMATS;
+	}
+
+	public void setTOTAL_NUMBER_OF_IMAGE_FORMATS(int tOTAL_NUMBER_OF_IMAGE_FORMATS) {
+		TOTAL_NUMBER_OF_IMAGE_FORMATS = tOTAL_NUMBER_OF_IMAGE_FORMATS;
+	}
+
+	public List<FormatAndResolutions> getFORMAT_RESOLUTIONS() {
+		return FORMAT_RESOLUTIONS;
+	}
+
+	public void setFORMAT_RESOLUTIONS(List<FormatAndResolutions> fORMAT_RESOLUTIONS) {
+		FORMAT_RESOLUTIONS = fORMAT_RESOLUTIONS;
+	}
+
+
+}
